@@ -1,0 +1,42 @@
+.show {
+
+}
+    .show__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .show__note {
+        margin-top: 18px;
+        font-size: 18px;
+        line-height: 25px;
+        color: #6073A2;
+    }
+
+    .show__team-heading {
+        margin-top: 28px;
+    }
+
+    .show__team-list {
+        margin-top: 20px;
+    }
+
+    .show__content {
+        margin-top: 40px;
+    }
+
+    .show__actors-heading {
+        margin-top: 40px;
+    }
+
+    .show__actors-list {
+        margin-top: 24px;
+    }
+
+    .show__participants-heading {
+        margin-top: 10px;
+    }
+
+    .show__participants-list {
+        margin-top: 10px;
+    }
