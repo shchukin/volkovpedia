@@ -127,11 +127,12 @@
             }
                 .footer__section {
                     margin-top: 18px;
+                    width: 100%;
                 }
                     .footer__handler {
-                        display: flex;
-                        align-items: center;
-                        gap: 8px;
+                        position: relative;
+                        padding-right: 32px;
+                        width: 100%;
                         /*width: fit-content;*/
                         /*padding-top: 7px;*/
                         /*padding-bottom: 7px;*/
@@ -154,9 +155,10 @@
                     .footer__section:has(.footer__dropdown) .footer__handler::after {
                         content: "";
                         flex-shrink: 0;
-                        display: block;
-                        margin-top: -3px;
-                        margin-bottom: -3px;
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        margin-top: -12px;
                         width: 24px;
                         height: 24px;
                         background-image: url("../vectors/footer-handler.svg");
