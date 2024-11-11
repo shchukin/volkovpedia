@@ -2,11 +2,14 @@
 
 }
     .simplified-spectacle__heading {
-
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .simplified-spectacle__note {
-
+        font-size: 18px;
+        line-height: 25px;
+        color: #6073A2;
     }
 
     .simplified-spectacle__team-heading {
