@@ -1,0 +1,97 @@
+.list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+    .list__item {
+        margin-top: 10px;
+        position: relative;
+        padding-left: 24px;
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+    }
+
+    .list__item:first-child {
+        margin-top: 0;
+    }
+        .list__item::before {
+            content: "";
+            position: absolute;
+            left: 8px;
+            top: 9px;
+            display: block;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: currentColor;
+        }
+
+
+
+@media (1700px <= width) {
+
+    .list {
+        /*margin-top: 0;*/
+        /*margin-bottom: 0;*/
+        /*padding-left: 0;*/
+        /*list-style: none;*/
+    }
+        .list__item {
+            /*margin-top: 10px;*/
+            /*position: relative;*/
+            /*padding-left: 24px;*/
+            /*font-size: var(--body-font-size);*/
+            /*line-height: var(--body-line-height);*/
+        }
+
+        .list__item:first-child {
+            /*margin-top: 0;*/
+        }
+            .list__item::before {
+                /*content: "";*/
+                /*position: absolute;*/
+                /*left: 8px;*/
+                top: 10px;
+                /*display: block;*/
+                /*width: 5px;*/
+                /*height: 5px;*/
+                /*border-radius: 50%;*/
+                /*background-color: currentColor;*/
+            }
+}
+
+
+
+@media (width < 740px) {
+
+    .list {
+        /*margin-top: 0;*/
+        /*margin-bottom: 0;*/
+        /*padding-left: 0;*/
+        /*list-style: none;*/
+    }
+        .list__item {
+            /*margin-top: 10px;*/
+            /*position: relative;*/
+            padding-left: 20px;
+            /*font-size: var(--body-font-size);*/
+            /*line-height: var(--body-line-height);*/
+        }
+
+        .list__item:first-child {
+            /*margin-top: 0;*/
+        }
+            .list__item::before {
+                /*content: "";*/
+                /*position: absolute;*/
+                left: 6px;
+                top: 8px;
+                /*display: block;*/
+                /*width: 5px;*/
+                /*height: 5px;*/
+                /*border-radius: 50%;*/
+                /*background-color: currentColor;*/
+            }
+}
+
