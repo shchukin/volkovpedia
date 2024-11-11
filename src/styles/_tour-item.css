@@ -17,6 +17,10 @@
         margin-top: 40px;
     }
 
+    .tour-item__spectacle {
+        margin-top: 60px;
+    }
+
 
 
 @media (1700px <= width) {
@@ -39,4 +43,38 @@
         .tour-item__content {
             /*margin-top: 40px;*/
         }
+
+        .tour-item__spectacle {
+            margin-top: 80px;
+        }
 }
+
+
+
+@media (width < 740px) {
+
+    .tour-item {
+        /*max-width: 800px;*/
+    }
+        .tour-item__heading {
+
+        }
+
+        .tour-item__date {
+            margin-top: 20px;
+            /*display: block;*/
+            /*font-size: 18px;*/
+            /*line-height: 25px;*/
+            /*color: #6073A2;*/
+        }
+
+        .tour-item__content {
+            margin-top: 24px;
+        }
+
+        .tour-item__spectacle {
+            margin-top: 40px;
+        }
+}
+
+

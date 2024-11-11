@@ -26,3 +26,21 @@
             /*margin-top: 32px;*/
         }
 }
+
+
+
+@media (width < 740px) {
+
+    .content {
+        padding-top: 16px;
+        padding-bottom: 80px;
+    }
+        .content__breadcrumbs {
+
+        }
+
+        .content__unique-part  {
+            margin-top: 16px;
+        }
+}
+
