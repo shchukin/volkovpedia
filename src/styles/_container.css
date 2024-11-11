@@ -1,0 +1,21 @@
+.container {
+    box-sizing: content-box;
+    width: 1184px;
+    border-left: var(--container-padding) solid transparent;
+    border-right: var(--container-padding) solid transparent;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (1700px <= width) {
+    .container {
+        width: 1440px;
+    }
+}
+
+@media (width < 740px) {
+
+    .container {
+        width: auto;
+    }
+}
