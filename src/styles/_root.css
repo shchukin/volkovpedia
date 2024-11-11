@@ -30,8 +30,8 @@
 @media (width < 740px) {
     :root {
         --container-padding: 16px;
-        --body-font-size: 15px;
-        --body-line-height: 20px;
+        --body-font-size: 16px;
+        --body-line-height: 22px;
     }
 
     @media (350px <= width) {
