@@ -3,9 +3,9 @@
     --font-heading: "Brygada 1918";
     --body-font-size: 16px;
     --body-line-height: 22px;
-    /*--ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);*/
+    --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
     --transition-hover: 100ms ease;
-    /*--transition-show: 1200ms var(--ease-out-quint);*/
+    --transition-show: 1200ms var(--ease-out-quint);
     --image-fallback: #F3F5F4;
     --container-padding: 30px;
     /*--action-color: #0D7FC5;*/
