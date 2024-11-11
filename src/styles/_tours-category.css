@@ -1,3 +1,69 @@
 .tours-category {
 
 }
+    .tours-category__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .tours-category__list {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 32px 16px;
+    }
+
+    .tours-category__pagination {
+        margin-top: 32px;
+    }
+
+
+
+@media (1700px <= width) {
+
+    .tours-category {
+
+    }
+        .tours-category__heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+        }
+
+        .tours-category__list {
+            /*margin-top: 40px;*/
+            /*display: grid;*/
+            /*grid-template-columns: repeat(3, minmax(0, 1fr));*/
+            gap: 40px 24px;
+        }
+
+        .tours-category__pagination {
+            margin-top: 40px;
+        }
+}
+
+
+
+@media (width < 740px) {
+
+    .tours-category {
+
+    }
+        .tours-category__heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+            /*text-align: center;*/
+        }
+
+        .tours-category__list {
+            margin-top: 28px;
+            /*display: grid;*/
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+            gap: 26px;
+        }
+
+        .tours-category__pagination {
+            margin-top: 26px;
+        }
+}
+
