@@ -1,0 +1,42 @@
+.tour-item {
+    max-width: 800px;
+}
+    .tour-item__heading {
+
+    }
+
+    .tour-item__date {
+        margin-top: 20px;
+        display: block;
+        font-size: 18px;
+        line-height: 25px;
+        color: #6073A2;
+    }
+
+    .tour-item__content {
+        margin-top: 40px;
+    }
+
+
+
+@media (1700px <= width) {
+
+    .tour-item {
+        max-width: 1148px;
+    }
+        .tour-item__heading {
+
+        }
+
+        .tour-item__date {
+            margin-top: 24px;
+            /*display: block;*/
+            font-size: 20px;
+            line-height: 27px;
+            /*color: #6073A2;*/
+        }
+
+        .tour-item__content {
+            /*margin-top: 40px;*/
+        }
+}

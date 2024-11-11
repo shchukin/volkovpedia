@@ -1,9 +1,28 @@
 .content {
-
+    padding-top: 18px;
+    padding-bottom: 120px;
 }
     .content__breadcrumbs {
 
     }
 
-    .content__unique-part [
-    ]
+    .content__unique-part  {
+        margin-top: 32px;
+    }
+
+
+
+@media (1700px <= width) {
+
+    .content {
+        /*padding-top: 18px;*/
+        padding-bottom: 160px;
+    }
+        .content__breadcrumbs {
+
+        }
+
+        .content__unique-part  {
+            /*margin-top: 32px;*/
+        }
+}
