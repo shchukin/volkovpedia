@@ -7,3 +7,7 @@ body {
     font-size: var(--body-font-size);
     line-height: var(--body-line-height);
 }
+
+.burger-expanded body {
+    background-color: #FFFFFF;
+}
