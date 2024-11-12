@@ -3,12 +3,12 @@
     z-index: 400;
     left: 0;
     right: 0;
-    top: calc(var(--header-height) - 58px);
+    top: calc(var(--header-height) - 45px);
     padding-bottom: 34px;
     background-color: #FFFFFF;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    max-height: calc(100vh - var(--header-height) + 58px);
+    max-height: calc(100vh - var(--header-height) + 45px);
     overflow-y: auto;
     display: none;
 }
@@ -46,11 +46,11 @@
 @media (1700px <= width) {
 
     .menu {
-        top: calc(var(--header-height) - 78px);
+        top: calc(var(--header-height) - 63px);
         padding-bottom: 59px;
         border-bottom-left-radius: 12px;
         border-bottom-right-radius: 12px;
-        max-height: calc(100vh - var(--header-height) + 78px);
+        max-height: calc(100vh - var(--header-height) + 63px);
     }
         .menu__close {
             width: 68px;
