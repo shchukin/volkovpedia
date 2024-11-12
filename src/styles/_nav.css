@@ -58,6 +58,18 @@
                 }
 
 
+.nav--header {
+
+}
+    .nav--header .nav__handler {
+        color: #303F64;
+    }
+
+    .nav--header .nav__link {
+        color: #6073A2;
+    }
+
+
 @media (1700px <= width) {
 
     .nav {
@@ -195,7 +207,7 @@
                             padding-bottom: 6px;
                             font-size: 15px;
                             line-height: 20px;
-                            color: #6073A2;
                         }
 }
+
 
