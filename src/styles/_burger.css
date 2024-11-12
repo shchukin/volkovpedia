@@ -1,0 +1,13 @@
+.burger {
+    width: 184px;
+    height: 42px;
+    vertical-align: top;
+    border: none;
+    background-color: pink;
+}
+
+@media (1700px <= width) {
+    .burger {
+        height: 50px;
+    }
+}

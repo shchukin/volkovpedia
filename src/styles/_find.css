@@ -1,0 +1,10 @@
+.find {
+    height: 42px;
+    background-color: pink;
+}
+
+@media (1700px <= width) {
+    .find {
+        height: 50px;
+    }
+}
