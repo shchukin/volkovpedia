@@ -8,8 +8,12 @@
 
         }
 
-    .find__form {
+        .find__handler-cross {
+            display: none;
+        }
 
+    .find__form {
+        position: relative;
     }
         .find__field {
             vertical-align: top;
@@ -154,15 +158,131 @@
 }
 
 
-/*@media (1700px <= width) {*/
-/*    .find {*/
-/*        height: 52px;*/
-/*    }*/
-/*}*/
 
-/*@media (width < 740px) {*/
-/*    .find {*/
-/*        width: 50px;*/
-/*        height: 76px;*/
-/*    }*/
-/*}*/
+@media (width < 740px) {
+
+    .find {
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+        .find__handler {
+            width: 54px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+            .find__handler-icon {
+                vertical-align: top;
+                width: 34px;
+                height: 34px;
+                fill: #E4BB6B;
+            }
+
+            .find__handler-cross {
+                vertical-align: top;
+                width: 28px;
+                height: 28px;
+                fill: #E4BB6B;
+            }
+
+        .find__form {
+            flex-grow: 1;
+            display: none;
+        }
+            .find__field {
+                /*vertical-align: top;*/
+                /*width: 100%;*/
+                /*box-shadow: 0 0 0 1px #F8F0E5;*/
+                /*border: none;*/
+                /*background-color: transparent; !* reset grey background in some cases, such as <select> *!*/
+                /*background-clip: padding-box;*/
+                /*outline: none;*/
+                /*border-radius: 21px;*/
+                /*font-family: inherit;*/
+                font-size: 16px; /* not less than 16px (otherwise mobile browsers will zoom in on focus) */
+                /*line-height: 22px;*/
+                /*color: #FFFFFF;*/
+                /*opacity: 1; !* reset select:disabled default fade on iOS *!*/
+                /*-webkit-tap-highlight-color: transparent;*/
+                /*transition: box-shadow var(--transition-hover);*/
+            }
+
+            .find__field::placeholder {
+                /*opacity: 1; !* reset opacity drop Firefox *!*/
+                /*color: #F8F0E5;*/
+            }
+
+            .find__field:hover {
+                /*box-shadow: 0 0 0 1px #FFFFFF;*/
+            }
+
+            .find__field:focus-visible {
+                /*box-shadow: 0 0 0 2px #FFFFFF;*/
+                /*transition: none;*/
+            }
+
+            .find__submit {
+                /*position: absolute;*/
+                /*right: 0;*/
+                /*top: 0;*/
+                width: 66px;
+                height: 62px;
+                margin-top: -10px;
+                margin-right: -10px;
+                /*height: 100%;*/
+                /*background-color: transparent;*/
+                /*padding: 0;*/
+                /*border: none;*/
+                /*border-radius: 50%;*/
+                /*cursor: pointer;*/
+            }
+                .find__submit-icon {
+                    /*vertical-align: top;*/
+                    /*fill: #F8F0E5;*/
+                    /*margin-top: 4px;*/
+                    /*width: 24px;*/
+                    /*height: 24px;*/
+                }
+
+                .find__submit:hover .find__submit-icon {
+                    /*fill: #FFFFFF;*/
+                }
+
+                .find__submit:active {
+                    /*translate: 0 1px;*/
+                }
+
+
+
+    .search-expanded .find {
+        padding-right: calc(70px - var(--container-padding));
+    }
+        .search-expanded .find__handler {
+            position: absolute;
+            right: calc(-1 * var(--container-padding));
+            top: 0;
+            width: 70px;
+            justify-content: center;
+        }
+            .search-expanded .find__handler-icon {
+                display: none;
+            }
+
+            .search-expanded .find__handler-cross {
+                display: block;
+            }
+
+        .search-expanded .find__form {
+            display: block;
+        }
+}
+
+

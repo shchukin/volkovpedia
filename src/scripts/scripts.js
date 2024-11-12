@@ -40,6 +40,7 @@
     // });
 
     const $html = document.querySelector('html');
+    const $findField = document.querySelector('.find__field');
 
     document.querySelectorAll('.nav__handler').forEach(item => item.addEventListener('click', function(event) {
         event.preventDefault();
@@ -52,6 +53,13 @@
 
     document.querySelector('.menu__close').addEventListener('click', function(event) {
         $html.classList.remove('burger-expanded');
+    });
+
+    document.querySelector('.find__handler').addEventListener('click', function(event) {
+        $html.classList.toggle('search-expanded');
+        if ($html.classList.contains('search-expanded') ) {
+            $findField.focus();
+        }
     });
 
 })(jQuery);
