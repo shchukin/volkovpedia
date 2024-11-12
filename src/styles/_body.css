@@ -8,6 +8,10 @@ body {
     line-height: var(--body-line-height);
 }
 
-.burger-expanded body {
-    background-color: #FFFFFF;
+
+@media (width < 740px) {
+
+    .burger-expanded body {
+        background-color: #FFFFFF;
+    }
 }

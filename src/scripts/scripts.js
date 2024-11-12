@@ -40,12 +40,13 @@
     // });
 
     const $html = document.querySelector('html');
-    const $findField = document.querySelector('.find__field');
 
-    document.querySelectorAll('.nav__handler').forEach(item => item.addEventListener('click', function(event) {
-        event.preventDefault();
-        item.closest('.nav__section').classList.toggle('footer__section--expanded');
-    }));
+
+
+    /* Расхлопывание меню (актуально на смартфонах) */
+
+    const $menu = document.querySelector('.menu');
+    const $burger = document.querySelector('.burger');
 
     document.querySelector('.burger').addEventListener('click', function(event) {
         $html.classList.toggle('burger-expanded');
@@ -55,11 +56,36 @@
         $html.classList.remove('burger-expanded');
     });
 
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            $html.classList.remove('burger-expanded');
+        }
+    });
+
+    document.addEventListener('click', (event) => {
+        if (!$menu.contains(event.target) && !$burger.contains(event.target)) {
+            $html.classList.remove('burger-expanded');
+        }
+    });
+
+
+    /* Расхлопывание поиска (актуально на смартфонах) */
+
+    const $findField = document.querySelector('.find__field');
+
     document.querySelector('.find__handler').addEventListener('click', function(event) {
         $html.classList.toggle('search-expanded');
-        if ($html.classList.contains('search-expanded') ) {
+        if ($html.classList.contains('search-expanded')) {
             $findField.focus();
         }
     });
+
+
+    /* Расхлопывание подменюшек (актуально на смартфонах) */
+
+    document.querySelectorAll('.nav__handler').forEach(item => item.addEventListener('click', function(event) {
+        event.preventDefault();
+        item.closest('.nav__section').classList.toggle('footer__section--expanded');
+    }));
 
 })(jQuery);
