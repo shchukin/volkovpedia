@@ -50,4 +50,8 @@
         $html.classList.toggle('burger-expanded');
     });
 
+    document.querySelector('.menu__close').addEventListener('click', function(event) {
+        $html.classList.remove('burger-expanded');
+    });
+
 })(jQuery);
