@@ -1,13 +1,117 @@
 .burger {
-    width: 184px;
-    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 9px 20px;
     vertical-align: top;
     border: none;
-    background-color: pink;
+    background-color: #E4BB6B;
+    border-radius: 21px;
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 24px;
+    color: #303F64;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color var(--transition-hover);
 }
 
+.burger:hover {
+    background-color: var(--action-color-hover);
+}
+    .burger__desktop-icon {
+        vertical-align: top;
+        flex-shrink: 0;
+        width: 22px;
+        height: 22px;
+        fill: currentColor;
+    }
+
+    .burger__desktop-close {
+        display: none;
+        flex-shrink: 0;
+        width: 22px;
+        height: 22px;
+        vertical-align: top;
+        fill: currentColor;
+    }
+
+    .burger-expanded .burger__desktop-icon {
+        display: none;
+    }
+
+    .burger-expanded .burger__desktop-close {
+        display: block;
+    }
+
+
 @media (1700px <= width) {
+
     .burger {
-        height: 50px;
+        /*display: inline-flex;*/
+        /*align-items: center;*/
+        /*justify-content: center;*/
+        /*gap: 12px;*/
+        padding: 12px 25px;
+        /*vertical-align: top;*/
+        /*border: none;*/
+        /*background-color: #E4BB6B;*/
+        border-radius: 26px;
+        /*font-family: var(--font-heading);*/
+        /*font-weight: 500;*/
+        /*font-style: italic;*/
+        font-size: 18px;
+        line-height: 28px;
+        /*color: #303F64;*/
+        /*text-transform: uppercase;*/
+        /*cursor: pointer;*/
+        /*transition: background-color var(--transition-hover);*/
+    }
+
+    .burger:hover {
+        /*background-color: var(--action-color-hover);*/
+    }
+        .burger__desktop-icon {
+            /*vertical-align: top;*/
+            /*flex-shrink: 0;*/
+            width: 28px;
+            height: 28px;
+            /*fill: currentColor;*/
+        }
+
+        .burger__desktop-close {
+            /*display: none;*/
+            /*flex-shrink: 0;*/
+            width: 28px;
+            height: 28px;
+            /*vertical-align: top;*/
+            /*fill: currentColor;*/
+        }
+
+        .burger-expanded .burger__desktop-icon {
+            /*display: none;*/
+        }
+
+        .burger-expanded .burger__desktop-close {
+            /*display: block;*/
+        }
+}
+
+
+
+
+
+
+
+
+
+
+@media (width < 740px) {
+    .burger {
+        width: 50px;
+        height: 76px;
     }
 }

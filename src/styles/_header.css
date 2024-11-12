@@ -1,8 +1,4 @@
 .header {
-
-}
-
-.header {
     height: var(--header-height);
 }
     .header__detachable-part {
@@ -54,7 +50,7 @@
 
                 .header__search {
                     flex-grow: 1;
-                    margin-left: 94px;
+                    margin-left: 28px;
                 }
 
                 .header__burger {
@@ -67,6 +63,7 @@
                 display: flex;
                 align-items: stretch;
                 justify-content: space-between;
+                gap: 16px;
             }
                 .header__link {
                     display: flex;
@@ -81,6 +78,7 @@
                     font-size: 18px;
                     line-height: 22px;
                     color: #F8F0E5;
+                    white-space: nowrap;
                     text-decoration: none;
                     text-transform: uppercase;
                     transition: color var(--transition-hover);
@@ -148,12 +146,12 @@
 
                     .header__search {
                         /*flex-grow: 1;*/
-                        /*margin-left: 94px;*/
+                        margin-left: 40px;
                     }
 
                     .header__burger {
                         /*flex-shrink: 0;*/
-                        /*margin-left: 16px;*/
+                        margin-left: 24px;
                     }
 
                 .header__navigation {
@@ -196,5 +194,123 @@
                             /*border-radius: 50px;*/
                             /*background-color: currentColor;*/
                         }
+}
+
+
+
+@media (width < 740px) {
+
+    .header {
+        /*height: var(--header-height);*/
+    }
+        .header__detachable-part {
+            /*position: fixed;*/
+            /*z-index: 300;*/
+            /*left: 0;*/
+            /*top: 0;*/
+            /*right: 0;*/
+            /*height: var(--header-height);*/
+            /*background-color: #303F64;*/
+            /*color-scheme: dark;*/
+            /*color: #EBD7B2;*/
+            overflow: hidden;  /* (1) Обрезаем потенциальный скролл из (2) и (3) */
+        }
+            .header__wrap {
+                /*position: relative;*/
+            }
+                .header__primary {
+                    /*display: flex;*/
+                    /*align-items: center;*/
+                    /*height: 100%;*/
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+                    .header__logo {
+                        /*flex-shrink: 0;*/
+                        /*display: block;*/
+                        width: 156px;
+                        height: 48px;
+
+                        /*background-image: url("../images/header-logo/header-logo@1x.png");*/
+                        /*background-size: contain;*/
+                        /*background-repeat: no-repeat;*/
+                        /*background-position: left top;*/
+                        /*text-indent: 200%;*/
+                        /*white-space: nowrap;*/
+                        /*overflow: hidden;*/
+                    }
+
+                    .header__search {
+                        flex-grow: 0;
+                        margin-left: auto;
+                    }
+
+                    .header__burger {
+                        /*flex-shrink: 0;*/
+                        margin-left: 0;
+                        margin-right: calc(-1 * var(--container-padding));  /* (2) На некоторых андроидах может вызывать горизонтальный скролл в 2px, обрезаем его в (1) */
+                    }
+
+                .header__navigation {
+                    /*border-top: 1px solid #9597A4;*/
+                    /*display: flex;*/
+                    /*align-items: stretch;*/
+                    /*justify-content: space-between;*/
+                    margin-left: calc(-1 * var(--container-padding)); /* (3) На некоторых андроидах может вызывать горизонтальный скролл в 2px, обрезаем его в (1) */
+                    margin-right: calc(-1 * var(--container-padding));
+                    padding-left: var(--container-padding);
+                    padding-right: var(--container-padding);
+                    overflow-x: auto;
+                }
+                    .header__link {
+                        /*display: flex;*/
+                        /*align-items: center;*/
+                        /*justify-content: center;*/
+                        /*gap: 8px;*/
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        /*font-family: var(--font-heading);*/
+                        /*font-weight: 500;*/
+                        /*font-style: italic;*/
+                        font-size: 16px;
+                        line-height: 20px;
+                        /*color: #F8F0E5;*/
+                        /*text-decoration: none;*/
+                        /*text-transform: uppercase;*/
+                        /*transition: color var(--transition-hover);*/
+                    }
+
+                    .header__link:hover {
+                        /*color: #FFFFFF;*/
+                    }
+
+                    .header__link--current {
+                        /*font-weight: bold;*/
+                    }
+                        .header__link--current::before {
+                            /*content: "";*/
+                            /*flex-shrink: 0;*/
+                            /*display: block;*/
+                            /*width: 12px;*/
+                            /*height: 12px;*/
+                            /*border-radius: 50px;*/
+                            /*background-color: currentColor;*/
+                        }
+
+
+    .burger-expanded {
+
+    }
+        .burger-expanded .header__logo {
+            display: none;
+        }
+
+        .burger-expanded .header__search {
+            flex-grow: 1;
+        }
+
+        .burger-expanded .header__burger {
+            display: none;
+        }
 }
 

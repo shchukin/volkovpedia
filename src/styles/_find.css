@@ -5,6 +5,13 @@
 
 @media (1700px <= width) {
     .find {
-        height: 50px;
+        height: 52px;
+    }
+}
+
+@media (width < 740px) {
+    .find {
+        width: 50px;
+        height: 76px;
     }
 }

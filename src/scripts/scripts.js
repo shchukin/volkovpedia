@@ -39,10 +39,15 @@
     //     alias: 'phoneru',
     // });
 
+    const $html = document.querySelector('html');
+
     document.querySelectorAll('.nav__handler').forEach(item => item.addEventListener('click', function(event) {
         event.preventDefault();
         item.closest('.nav__section').classList.toggle('footer__section--expanded');
     }));
 
+    document.querySelector('.burger').addEventListener('click', function(event) {
+        $html.classList.toggle('burger-expanded');
+    });
 
 })(jQuery);
