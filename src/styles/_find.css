@@ -1,17 +1,168 @@
 .find {
-    height: 42px;
-    background-color: pink;
+    position: relative;
 }
+    .find__handler {
+        display: none;
+    }
+        .find__handler-icon {
+
+        }
+
+    .find__form {
+
+    }
+        .find__field {
+            vertical-align: top;
+            width: 100%;
+            height: 42px;
+            padding: 10px 50px 10px 22px;
+            box-shadow: 0 0 0 1px #F8F0E5;
+            border: none;
+            background-color: transparent; /* reset grey background in some cases, such as <select> */
+            background-clip: padding-box;
+            outline: none;
+            border-radius: 21px;
+            font-family: inherit;
+            font-size: 15px; /* not less than 16px (otherwise mobile browsers will zoom in on focus) */
+            line-height: 22px;
+            color: #FFFFFF;
+            opacity: 1; /* reset select:disabled default fade on iOS */
+            -webkit-tap-highlight-color: transparent;
+            transition: box-shadow var(--transition-hover);
+        }
+
+        .find__field::placeholder {
+            opacity: 1; /* reset opacity drop Firefox */
+            color: #F8F0E5;
+        }
+
+        .find__field:hover {
+            box-shadow: 0 0 0 1px #FFFFFF;
+        }
+
+        .find__field:focus-visible {
+            box-shadow: 0 0 0 2px #FFFFFF;
+            transition: none;
+        }
+
+        .find__submit {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 46px;
+            height: 100%;
+            background-color: transparent;
+            padding: 0;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+            .find__submit-icon {
+                vertical-align: top;
+                fill: #F8F0E5;
+                margin-top: 4px;
+                width: 24px;
+                height: 24px;
+            }
+
+            .find__submit:hover .find__submit-icon {
+                fill: #FFFFFF;
+            }
+
+            .find__submit:active {
+                translate: 0 1px;
+            }
+
+
 
 @media (1700px <= width) {
+
     .find {
-        height: 52px;
+        /*position: relative;*/
     }
+        .find__handler {
+            /*display: none;*/
+        }
+            .find__handler-icon {
+
+            }
+
+        .find__form {
+
+        }
+            .find__field {
+                /*vertical-align: top;*/
+                /*width: 100%;*/
+                height: 52px;
+                padding: 14px 60px 14px 26px;
+                /*box-shadow: 0 0 0 1px #F8F0E5;*/
+                /*border: none;*/
+                /*background-color: transparent; !* reset grey background in some cases, such as <select> *!*/
+                /*background-clip: padding-box;*/
+                /*outline: none;*/
+                border-radius: 26px;
+                /*font-family: inherit;*/
+                font-size: 18px; /* not less than 16px (otherwise mobile browsers will zoom in on focus) */
+                line-height: 24px;
+                /*color: #FFFFFF;*/
+                /*opacity: 1; !* reset select:disabled default fade on iOS *!*/
+                /*-webkit-tap-highlight-color: transparent;*/
+                /*transition: box-shadow var(--transition-hover);*/
+            }
+
+            .find__field::placeholder {
+                /*opacity: 1; !* reset opacity drop Firefox *!*/
+                /*color: #F8F0E5;*/
+            }
+
+            .find__field:hover {
+                /*box-shadow: 0 0 0 1px #FFFFFF;*/
+            }
+
+            .find__field:focus-visible {
+                /*box-shadow: 0 0 0 2px #FFFFFF;*/
+                /*transition: none;*/
+            }
+
+            .find__submit {
+                /*position: absolute;*/
+                /*right: 0;*/
+                /*top: 0;*/
+                width: 62px;
+                /*height: 100%;*/
+                /*background-color: transparent;*/
+                /*padding: 0;*/
+                /*border: none;*/
+                /*border-radius: 50%;*/
+                /*cursor: pointer;*/
+            }
+                .find__submit-icon {
+                    /*vertical-align: top;*/
+                    /*fill: #F8F0E5;*/
+                    /*margin-top: 4px;*/
+                    width: 26px;
+                    height: 26px;
+                }
+
+                .find__submit:hover .find__submit-icon {
+                    /*fill: #FFFFFF;*/
+                }
+
+                .find__submit:active {
+                    /*translate: 0 1px;*/
+                }
 }
 
-@media (width < 740px) {
-    .find {
-        width: 50px;
-        height: 76px;
-    }
-}
+
+/*@media (1700px <= width) {*/
+/*    .find {*/
+/*        height: 52px;*/
+/*    }*/
+/*}*/
+
+/*@media (width < 740px) {*/
+/*    .find {*/
+/*        width: 50px;*/
+/*        height: 76px;*/
+/*    }*/
+/*}*/

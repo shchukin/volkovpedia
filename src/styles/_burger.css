@@ -142,6 +142,10 @@
     .burger:hover {
         background-color: transparent;
     }
+
+    .burger:active {
+        translate: 0 1px;
+    }
         .burger__desktop-icon {
             display: none;
         }

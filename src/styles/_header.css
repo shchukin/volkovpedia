@@ -300,18 +300,18 @@
                         }
 
 
-    .burger-expanded {
+    .search-expanded {
 
     }
-        .burger-expanded .header__logo {
+        .search-expanded .header__logo {
             display: none;
         }
 
-        .burger-expanded .header__search {
+        .search-expanded .header__search {
             flex-grow: 1;
         }
 
-        .burger-expanded .header__burger {
+        .search-expanded .header__burger {
             display: none;
         }
 }
