@@ -1,3 +1,11 @@
 .page {
 
 }
+
+
+@media (width < 740px) {
+
+    .burger-expanded .page {
+        display: none;
+    }
+}

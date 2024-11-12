@@ -6,3 +6,8 @@
 :root {
     --slide-bottom: slide-bottom 1200ms var(--ease-out-quint);
 }
+
+
+:root {
+    --slide-bottom-faster: slide-bottom 600ms var(--ease-out-quint);
+}
