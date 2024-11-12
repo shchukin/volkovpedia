@@ -94,8 +94,9 @@
                 width: 100%;
             }
                 .nav__handler {
-                    position: relative;
-                    padding-right: 32px;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
                     width: 100%;
                     /*width: fit-content;*/
                     /*padding-top: 7px;*/
@@ -119,10 +120,8 @@
                 .nav__section:has(.nav__dropdown) .nav__handler::after {
                     content: "";
                     flex-shrink: 0;
-                    position: absolute;
-                    right: 0;
-                    top: 50%;
-                    margin-top: -12px;
+                    margin-top: -3px;
+                    margin-bottom: -2px;
                     width: 24px;
                     height: 24px;
                     background-image: url("../vectors/footer-handler.svg");
