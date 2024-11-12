@@ -241,11 +241,13 @@
                     }
 
                     .header__search {
+                        align-self: stretch;
                         flex-grow: 0;
                         margin-left: auto;
                     }
 
                     .header__burger {
+                        align-self: stretch;
                         /*flex-shrink: 0;*/
                         margin-left: 0;
                         margin-right: calc(-1 * var(--container-padding));  /* (2) На некоторых андроидах может вызывать горизонтальный скролл в 2px, обрезаем его в (1) */

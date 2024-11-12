@@ -48,6 +48,15 @@
     }
 
 
+    .burger__label {
+
+    }
+
+    .burger__smartphone-icon {
+        display: none;
+    }
+
+
 @media (1700px <= width) {
 
     .burger {
@@ -91,6 +100,10 @@
             /*fill: currentColor;*/
         }
 
+        .burger__label {
+
+        }
+
         .burger-expanded .burger__desktop-icon {
             /*display: none;*/
         }
@@ -102,16 +115,57 @@
 
 
 
+@media (width < 739px) {
 
-
-
-
-
-
-
-@media (width < 740px) {
     .burger {
-        width: 50px;
-        height: 76px;
+        height: 100%;
+        /*display: inline-flex;*/
+        /*align-items: center;*/
+        /*justify-content: center;*/
+        /*gap: 12px;*/
+        /*padding: 9px 20px;*/
+        /*vertical-align: top;*/
+        /*border: none;*/
+        background-color: transparent;
+        /*border-radius: 21px;*/
+        /*font-family: var(--font-heading);*/
+        /*font-weight: 500;*/
+        /*font-style: italic;*/
+        /*font-size: 16px;*/
+        /*line-height: 24px;*/
+        /*color: #303F64;*/
+        /*text-transform: uppercase;*/
+        /*cursor: pointer;*/
+        /*transition: background-color var(--transition-hover);*/
     }
+
+    .burger:hover {
+        background-color: transparent;
+    }
+        .burger__desktop-icon {
+            display: none;
+        }
+
+        .burger__desktop-close {
+            display: none;
+        }
+
+        .burger-expanded .burger__desktop-icon {
+            /*display: none;*/
+        }
+
+        .burger-expanded .burger__desktop-close {
+            /*display: block;*/
+        }
+
+
+        .burger__label {
+            display: none;
+        }
+
+        .burger__smartphone-icon {
+            display: block;
+            fill: #E4BB6B;
+        }
 }
+
