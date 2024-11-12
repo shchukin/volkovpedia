@@ -39,9 +39,9 @@
     //     alias: 'phoneru',
     // });
 
-    document.querySelectorAll('.footer__handler').forEach(item => item.addEventListener('click', function(event) {
+    document.querySelectorAll('.nav__handler').forEach(item => item.addEventListener('click', function(event) {
         event.preventDefault();
-        item.closest('.footer__section').classList.toggle('footer__section--expanded');
+        item.closest('.nav__section').classList.toggle('footer__section--expanded');
     }));
 
 
