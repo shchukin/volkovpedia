@@ -28,7 +28,7 @@
 @import url("_show.css");
 @import url("_list.css");
 @import url("_tours.css");
-@import url("_tours-category.css");
+@import url("_feed.css");
 @import url("_pagination.css");
 @import url("_teaser.css");
 @import url("_red-star.css");
@@ -37,5 +37,6 @@
 @import url("_burger.css");
 @import url("_find.css");
 @import url("_menu.css");
+@import url("_filter.css");
 
 

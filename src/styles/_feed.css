@@ -7,6 +7,17 @@
         text-align: center;
     }
 
+    .feed__filter {
+        position: sticky;
+        z-index: 10;
+        top: var(--header-height);
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin-top: 8px;
+        margin-bottom: -16px;
+        background-color: #F9F0E5;
+    }
+
     .feed__list {
         margin-top: 40px;
         display: grid;
@@ -28,6 +39,17 @@
         .feed__heading {
             /*margin-top: 0;*/
             /*margin-bottom: 0;*/
+        }
+
+        .feed__filter {
+            /*position: sticky;*/
+            /*z-index: 10;*/
+            /*top: var(--header-height);*/
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-top: 20px;
+            margin-bottom: -18px;
+            /*background-color: #F9F0E5;*/
         }
 
         .feed__list {
