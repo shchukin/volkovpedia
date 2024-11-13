@@ -1,11 +1,11 @@
-.tour-item {
+.article {
     max-width: 800px;
 }
-    .tour-item__heading {
+    .article__heading {
 
     }
 
-    .tour-item__date {
+    .article__date {
         margin-top: 20px;
         display: block;
         font-size: 18px;
@@ -13,11 +13,12 @@
         color: #6073A2;
     }
 
-    .tour-item__content {
+    .article__content {
         margin-top: 40px;
     }
 
-    .tour-item__spectacle {
+    /* На странице тура */
+    .article__spectacle {
         margin-top: 60px;
     }
 
@@ -25,14 +26,14 @@
 
 @media (1700px <= width) {
 
-    .tour-item {
+    .article {
         max-width: 1148px;
     }
-        .tour-item__heading {
+        .article__heading {
 
         }
 
-        .tour-item__date {
+        .article__date {
             margin-top: 24px;
             /*display: block;*/
             font-size: 20px;
@@ -40,11 +41,13 @@
             /*color: #6073A2;*/
         }
 
-        .tour-item__content {
+        .article__content {
             /*margin-top: 40px;*/
         }
 
-        .tour-item__spectacle {
+
+        /* На странице тура */
+        .article__spectacle {
             margin-top: 80px;
         }
 }
@@ -53,14 +56,14 @@
 
 @media (width < 740px) {
 
-    .tour-item {
+    .article {
         /*max-width: 800px;*/
     }
-        .tour-item__heading {
+        .article__heading {
 
         }
 
-        .tour-item__date {
+        .article__date {
             margin-top: 20px;
             /*display: block;*/
             /*font-size: 18px;*/
@@ -68,11 +71,13 @@
             /*color: #6073A2;*/
         }
 
-        .tour-item__content {
+        .article__content {
             margin-top: 24px;
         }
 
-        .tour-item__spectacle {
+
+        /* На странице тура */
+        .article__spectacle {
             margin-top: 40px;
         }
 }
