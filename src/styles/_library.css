@@ -43,6 +43,7 @@
                 align-items: flex-start;
                 gap: 16px;
                 overflow-x: auto;
+                overflow-y: hidden;
                 padding-bottom: 32px;
             }
 
@@ -124,3 +125,98 @@
                         width: 342px;
                     }
 }
+
+
+
+@media (width < 740px) {
+
+    .library {
+
+    }
+        .library__heading {
+
+        }
+
+        .library__body {
+
+        }
+            .library__section {
+                position: relative;
+            }
+
+            .library__section:first-child {
+
+            }
+                .library__sub-heading {
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+                    .library__sub-heading-link {
+
+                    }
+
+                    .library__sub-heading-link:hover {
+
+                    }
+
+                .library__list {
+                    margin-left: calc(-1 * var(--container-padding));  /* (2) На некоторых андроидах может вызывать горизонтальный скролл в 2px, обрезаем его в (1) */
+                    margin-right: calc(-1 * var(--container-padding));  /* (2) На некоторых андроидах может вызывать горизонтальный скролл в 2px, обрезаем его в (1) */
+                    padding-left: var(--container-padding);
+                    padding-right: var(--container-padding);
+                }
+
+                .library__list::-webkit-scrollbar {
+
+                }
+
+                .library__list::-webkit-scrollbar-thumb {
+
+                }
+
+
+
+    /* Скрываем скроллбар: */
+
+    .library__list {
+        padding-bottom: 0;
+    }
+    .library__list::-webkit-scrollbar { /* webkit */
+        display: none;
+    }
+
+    /* stylelint-disable property-no-unknown */
+    .library__list {
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Edge */
+    }
+    /* stylelint-enable */
+
+
+
+    /* Вариант с отображением скроллбара: */
+
+    /*.library__item {*/
+
+    /*}*/
+
+    /*.library__section::before,*/
+    /*.library__section::after {*/
+    /*    content: "";*/
+    /*    position: absolute;*/
+    /*    z-index: 10;*/
+    /*    bottom: -2px;*/
+    /*    width: var(--container-padding);*/
+    /*    height: 8px;*/
+    /*    background-color: #F8F1E7;*/
+    /*}*/
+
+    /*.library__section::before {*/
+    /*    left: calc(-1 * var(--container-padding)); !* (3) На некоторых андроидах может вызывать горизонтальный скролл в 2px, обрезаем его в (1) *!*/
+    /*}*/
+
+    /*.library__section::after {*/
+    /*    right: calc(-1 * var(--container-padding)); !* (3) На некоторых андроидах может вызывать горизонтальный скролл в 2px, обрезаем его в (1) *!*/
+}
+}
+
