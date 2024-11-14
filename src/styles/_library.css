@@ -1,0 +1,26 @@
+.library {
+
+}
+    .library__heading {
+
+    }
+
+    .library__body {
+
+    }
+        .library__section {
+
+        }
+            .library__sub-heading {
+
+            }
+
+            .library__list {
+                display: flex;
+                align-items: flex-start;
+                gap: 16px;
+            }
+                .library__item {
+                    flex-shrink: 0;
+                    width: 284px;
+                }
