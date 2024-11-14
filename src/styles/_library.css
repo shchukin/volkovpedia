@@ -41,7 +41,7 @@
                 margin-top: 24px;
                 display: flex;
                 align-items: flex-start;
-                gap: 16px;
+                gap: 32px 16px;
                 overflow-x: auto;
                 overflow-y: hidden;
                 padding-bottom: 32px;
@@ -59,6 +59,14 @@
                     flex-shrink: 0;
                     width: 284px;
                 }
+
+
+.library--full {
+
+}
+    .library--full .library__list {
+        flex-wrap: wrap;
+    }
 
 
 
@@ -107,7 +115,7 @@
                     margin-top: 28px;
                     /*display: flex;*/
                     /*align-items: flex-start;*/
-                    gap: 24px;
+                    gap: 72px 24px;
                     /*overflow-x: auto;*/
                     /*padding-bottom: 32px;*/
                 }
