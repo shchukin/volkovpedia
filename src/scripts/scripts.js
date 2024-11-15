@@ -88,4 +88,9 @@
         item.closest('.nav__section').classList.toggle('footer__section--expanded');
     }));
 
+
+    document.querySelector('.collapse__handler').addEventListener('click', function() {
+        this.closest('.collapse').classList.toggle('collapse--expanded');
+    });
+
 })(jQuery);
