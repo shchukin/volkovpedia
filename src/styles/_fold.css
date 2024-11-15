@@ -3,27 +3,9 @@
 }
     .fold__main {
         position: relative;
-        padding-left: 402px;
     }
-        .fold__author {
-            font-size: 20px;
-            line-height: 24px;
-            color: #6073A2;
-        }
-
-        .fold__title {
-            margin-top: 20px;
-            margin-bottom: 0;
-            font-weight: 600;
-            font-size: 28px;
-            line-height: 34px;
-            color: #303F64;
-        }
-
         .fold__stage {
-            position: absolute;
-            left: 0;
-            top: 0;
+            float: left;
             width: 384px;
         }
             .fold__preview {
@@ -44,8 +26,30 @@
                     width: 100%;
                 }
 
-        .fold__summary {
+        .fold__head {
+            float: left;
+            width: 800px;
+            padding-left: 18px;
+        }
+            .fold__author {
+                font-size: 20px;
+                line-height: 24px;
+                color: #6073A2;
+            }
 
+            .fold__title {
+                margin-top: 20px;
+                margin-bottom: 0;
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 34px;
+                color: #303F64;
+            }
+
+        .fold__summary {
+            float: left;
+            width: 800px;
+            padding-left: 18px;
         }
             .fold__stats {
                 margin-top: 40px;
@@ -97,26 +101,10 @@
 
     }
         .fold__main {
-            /*display: grid;*/
-            padding-left: 488px;
+
         }
-            .fold__author {
-                font-size: 24px;
-                line-height: 29px;
-                /*color: #6073A2;*/
-            }
-
-            .fold__title {
-                margin-top: 24px;
-                /*margin-bottom: 0;*/
-                /*font-weight: 600;*/
-                font-size: 32px;
-                line-height: 38px;
-                /*color: #303F64;*/
-            }
-
             .fold__stage {
-                width: 464px;
+
             }
                 .fold__preview {
 
@@ -136,8 +124,27 @@
                         /*width: 100%;*/
                     }
 
-            .fold__summary {
+            .fold__head {
+                width: 952px;
+                padding-left: 24px;
+            }
+                .fold__author {
+                    font-size: 24px;
+                    line-height: 29px;
+                    /*color: #6073A2;*/
+                }
+                    .fold__title {
+                        margin-top: 24px;
+                        /*margin-bottom: 0;*/
+                        /*font-weight: 600;*/
+                        font-size: 32px;
+                        line-height: 38px;
+                        /*color: #303F64;*/
+                    }
 
+            .fold__summary {
+                width: 952px;
+                padding-left: 24px;
             }
                 .fold__stats {
                     margin-top: 43px;
@@ -182,4 +189,112 @@
         }
 }
 
+
+
+@media (width < 740px) {
+
+    .fold {
+
+    }
+        .fold__main {
+            /*position: relative;*/
+            display: flex;
+            flex-direction: column;
+        }
+            .fold__stage {
+                margin-top: 24px;
+                float: none;
+                width: auto;
+                max-width: 340px;
+            }
+                .fold__preview {
+
+                }
+                    .fold__image {
+                        /*vertical-align: top;*/
+                        /*width: 100%;*/
+                        /*height: auto;*/
+                        /*background-color: var(--image-fallback);*/
+                    }
+
+                .fold__buy {
+                    /*margin-top: 16px;*/
+                }
+                    .fold__buy.button,
+                    .fold__buy .button {
+                        /*width: 100%;*/
+                    }
+
+            .fold__head {
+                order: -1;
+                float: none;
+                width: auto;
+                padding-left: 0;
+            }
+                .fold__author {
+                    font-size: 18px;
+                    line-height: 22px;
+                    /*color: #6073A2;*/
+                }
+
+                .fold__title {
+                    margin-top: 16px;
+                    /*margin-bottom: 0;*/
+                    /*font-weight: 600;*/
+                    font-size: 24px;
+                    line-height: 29px;
+                    /*color: #303F64;*/
+                }
+
+            .fold__summary {
+                float: none;
+                width: auto;
+                padding-left: 0;
+                margin-top: 40px;
+            }
+                .fold__stats {
+                    margin-top: 0;
+                }
+                    .fold__row {
+                        /*margin-top: 20px;*/
+                        display: block;
+                        /*align-items: flex-start;*/
+                        /*gap: 12px;*/
+                    }
+
+                    .fold__row:first-child {
+                        /*margin-top: 0;*/
+                    }
+                        .fold__param {
+                            display: block;
+                            /*flex-shrink: 0;*/
+                            /*font-weight: normal;*/
+                            /*font-size: 16px;*/
+                            /*line-height: 22px;*/
+                            /*text-transform: uppercase;*/
+                            /*color: #9C9CC5;*/
+                        }
+
+                        .fold__value {
+                            margin-top: 4px;
+                            display: block;
+                            /*flex-grow: 1;*/
+                            /*font-size: 16px;*/
+                            /*line-height: 22px;*/
+                            /*text-transform: uppercase;*/
+                        }
+
+                .fold__description {
+                    margin-top: 40px;
+                }
+
+
+        .fold__literature {
+            margin-top: 50px;
+        }
+
+        .fold__related {
+            margin-top: 60px;
+        }
+}
 
