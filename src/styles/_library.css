@@ -15,58 +15,6 @@
         .library__section:first-child {
             margin-top: 0;
         }
-            .library__sub-heading {
-                margin-top: 0;
-                margin-bottom: 0;
-                font-family: var(--font-heading);
-                font-weight: 500;
-                font-style: italic;
-                font-size: 28px;
-                line-height: 33px;
-                color: #303F64;
-                text-transform: uppercase;
-            }
-                .library__sub-heading-link {
-                    color: inherit;
-                    text-decoration: 1.5px underline transparent;
-                    text-underline-offset: 3px;
-                    transition: text-decoration-color var(--transition-hover);
-                }
-
-                .library__sub-heading-link:hover {
-                    text-decoration-color: currentColor;
-                }
-
-            .library__list {
-                margin-top: 24px;
-                display: flex;
-                align-items: flex-start;
-                gap: 32px 16px;
-                overflow-x: auto;
-                overflow-y: hidden;
-                padding-bottom: 32px;
-            }
-
-            .library__list::-webkit-scrollbar {
-                height: 4px;
-                background-image: linear-gradient(transparent, transparent 1px, #6073A2 1px, #6073A2 3px, transparent 3px, transparent);
-            }
-
-            .library__list::-webkit-scrollbar-thumb {
-                background-color: #E4BB6B;
-            }
-                .library__item {
-                    flex-shrink: 0;
-                    width: 284px;
-                }
-
-
-.library--full {
-
-}
-    .library--full .library__list {
-        flex-wrap: wrap;
-    }
 
 
 
@@ -89,49 +37,6 @@
             .library__section:first-child {
                 /*margin-top: 0;*/
             }
-                .library__sub-heading {
-                    /*margin-top: 0;*/
-                    /*margin-bottom: 0;*/
-                    /*font-family: var(--font-heading);*/
-                    /*font-weight: 500;*/
-                    /*font-style: italic;*/
-                    font-size: 32px;
-                    line-height: 37px;
-                    /*color: #303F64;*/
-                    /*text-transform: uppercase;*/
-                }
-                    .library__sub-heading-link {
-                        /*color: inherit;*/
-                        /*text-decoration: 1.5px underline transparent;*/
-                        /*text-underline-offset: 3px;*/
-                        /*transition: text-decoration-color var(--transition-hover);*/
-                    }
-
-                    .library__sub-heading-link:hover {
-                        /*text-decoration-color: currentColor;*/
-                    }
-
-                .library__list {
-                    margin-top: 28px;
-                    /*display: flex;*/
-                    /*align-items: flex-start;*/
-                    gap: 72px 24px;
-                    /*overflow-x: auto;*/
-                    /*padding-bottom: 32px;*/
-                }
-
-                .library__list::-webkit-scrollbar {
-                    /*height: 4px;*/
-                    /*background-image: linear-gradient(transparent, transparent 1px, #6073A2 1px, #6073A2 3px, transparent 3px, transparent);*/
-                }
-
-                .library__list::-webkit-scrollbar-thumb {
-                    /*background-color: #E4BB6B;*/
-                }
-                    .library__item {
-                        /*flex-shrink: 0;*/
-                        width: 342px;
-                    }
 }
 
 
@@ -149,81 +54,7 @@
 
         }
             .library__section {
-                position: relative;
-            }
-
-            .library__section:first-child {
 
             }
-                .library__sub-heading {
-                    font-size: 24px;
-                    line-height: 28px;
-                }
-                    .library__sub-heading-link {
-
-                    }
-
-                    .library__sub-heading-link:hover {
-
-                    }
-
-                .library__list {
-                    margin-left: calc(-1 * var(--container-padding));  /* (2) На некоторых андроидах может вызывать горизонтальный скролл в 2px, обрезаем его в (1) */
-                    margin-right: calc(-1 * var(--container-padding));  /* (2) На некоторых андроидах может вызывать горизонтальный скролл в 2px, обрезаем его в (1) */
-                    padding-left: var(--container-padding);
-                    padding-right: var(--container-padding);
-                }
-
-                .library__list::-webkit-scrollbar {
-
-                }
-
-                .library__list::-webkit-scrollbar-thumb {
-
-                }
-
-
-
-    /* Скрываем скроллбар: */
-
-    .library__list {
-        padding-bottom: 0;
-    }
-    .library__list::-webkit-scrollbar { /* webkit */
-        display: none;
-    }
-
-    /* stylelint-disable property-no-unknown */
-    .library__list {
-        scrollbar-width: none; /* Firefox */
-        -ms-overflow-style: none; /* Edge */
-    }
-    /* stylelint-enable */
-
-
-
-    /* Вариант с отображением скроллбара: */
-
-    /*.library__item {*/
-
-    /*}*/
-
-    /*.library__section::before,*/
-    /*.library__section::after {*/
-    /*    content: "";*/
-    /*    position: absolute;*/
-    /*    z-index: 10;*/
-    /*    bottom: -2px;*/
-    /*    width: var(--container-padding);*/
-    /*    height: 8px;*/
-    /*    background-color: #F8F1E7;*/
-    /*}*/
-
-    /*.library__section::before {*/
-    /*    left: calc(-1 * var(--container-padding)); !* (3) На некоторых андроидах может вызывать горизонтальный скролл в 2px, обрезаем его в (1) *!*/
-    /*}*/
-
-    /*.library__section::after {*/
-    /*    right: calc(-1 * var(--container-padding)); !* (3) На некоторых андроидах может вызывать горизонтальный скролл в 2px, обрезаем его в (1) *!*/
 }
 
