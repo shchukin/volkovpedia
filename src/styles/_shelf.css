@@ -61,6 +61,10 @@
     .shelf--full .shelf__list {
         flex-wrap: wrap;
     }
+        .shelf--full .shelf__item {
+
+        }
+
 
 
 
@@ -116,6 +120,18 @@
                     /*flex-shrink: 0;*/
                     width: 342px;
                 }
+
+
+
+    .shelf--full {
+
+    }
+        .shelf--full .shelf__list {
+
+        }
+            .shelf--full .shelf__item {
+
+            }
 }
 
 
@@ -156,6 +172,26 @@
 
         }
 
+    .shelf--full {
+
+    }
+        .shelf--full .shelf__list {
+            display: block;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+        }
+            .shelf--full .shelf__item {
+                width: auto;
+                margin-top: 44px;
+            }
+
+            .shelf--full .shelf__item:first-child {
+                margin-top: 0;
+            }
+                .shelf--full .shelf__item .book__preview {
+                    max-width: 340px;
+                }
 
 
     /* Скрываем скроллбар: */
