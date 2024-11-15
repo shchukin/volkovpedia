@@ -83,9 +83,53 @@
 
     /* Расхлопывание подменюшек (актуально на смартфонах) */
 
-    document.querySelectorAll('.nav__handler').forEach(item => item.addEventListener('click', function(event) {
-        event.preventDefault();
-        item.closest('.nav__section').classList.toggle('footer__section--expanded');
-    }));
+    function resize(clipped) {
+        const viewport = clipped.querySelector('.clipped__viewport');
+        if (!clipped.classList.contains('clipped--open')) {
+            viewport.style.height = clipped.getAttribute('data-canonical-height') + 'px';
+        } else {
+            viewport.style.height = clipped.getAttribute('data-actual-height') + 'px';
+        }
+    }
+
+    function init() {
+        document.querySelectorAll('.clipped').forEach(clipped => {
+            let height = 0;
+            const canonicalHeight = parseInt(clipped.getAttribute('data-canonical-height'));
+
+            // Reset heights to their defaults before measuring
+            clipped.classList.add('clipped--measurement');
+
+            // Measure
+            const content = clipped.querySelector('.clipped__content');
+            height = content.offsetHeight;
+            clipped.setAttribute('data-actual-height', height);
+
+            // Revert to original state
+            clipped.classList.remove('clipped--measurement');
+
+            // Check if expandable
+            if (height > canonicalHeight) {
+                clipped.classList.add('clipped--expandable');
+                resize(clipped);
+            } else {
+                clipped.classList.remove('clipped--expandable');
+                clipped.querySelector('.clipped__viewport').style.height = '';
+            }
+        });
+    }
+
+    window.addEventListener('resize', init);
+    window.addEventListener('load', init);
+
+    document.querySelectorAll('.clipped__handler').forEach(handler => {
+        handler.addEventListener('click', function () {
+            const clipped = handler.closest('.clipped');
+            clipped.classList.toggle('clipped--open');
+            resize(clipped);
+        });
+    });
+
+
 
 })(jQuery);
