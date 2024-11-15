@@ -6,6 +6,7 @@ body {
     font-family: var(--font);
     font-size: var(--body-font-size);
     line-height: var(--body-line-height);
+    color: #0B1E3A;
 }
 
 
