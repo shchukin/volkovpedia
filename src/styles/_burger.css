@@ -6,7 +6,7 @@
     padding: 9px 20px;
     vertical-align: top;
     border: none;
-    background-color: #E4BB6B;
+    background-color: var(--yellow-action-color);
     border-radius: 21px;
     font-family: var(--font-heading);
     font-weight: 500;
@@ -20,7 +20,7 @@
 }
 
 .burger:hover {
-    background-color: var(--action-color-hover);
+    background-color: var(--yellow-action-color-hover);
 }
     .burger__desktop-icon {
         vertical-align: top;

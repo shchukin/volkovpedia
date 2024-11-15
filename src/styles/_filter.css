@@ -22,7 +22,7 @@
     }
 
     .filter__action:hover {
-        background-color: var(--action-color-hover);
+        background-color: var(--yellow-action-color-hover);
     }
 
     .filter__action--current,
