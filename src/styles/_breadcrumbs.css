@@ -53,6 +53,7 @@
                 }
 
                 .breadcrumbs__title {
+                    max-width: 300px;
                     padding: var(--breadcrumbs-padding);
                     overflow: hidden;
                     white-space: nowrap;

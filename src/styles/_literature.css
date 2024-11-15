@@ -1,0 +1,148 @@
+.literature {
+
+}
+    .literature__heading {
+        font-family: var(--font-heading);
+        font-weight: 500;
+        font-style: italic;
+        font-size: 28px;
+        line-height: 34px;
+        color: #303F64;
+        text-transform: uppercase;
+    }
+
+    .literature__list {
+
+    }
+        .literature__item {
+            margin-top: 24px;
+        }
+
+        .literature__item:first-child {
+            margin-top: 0;
+        }
+            .literature__title {
+                margin-right: 4px;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 26px;
+                color: #0B1E3A;
+            }
+
+            .literature__details {
+                padding: 4px 8px;
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 28px;
+                color: #303F64;
+                text-decoration: 1.5px underline currentColor;
+                text-underline-offset: 2px;
+                transition: text-decoration-color var(--transition-hover);
+            }
+
+            .literature__details:hover {
+                text-decoration-color: transparent;
+            }
+
+
+
+@media (1700px <= width) {
+
+    .literature {
+
+    }
+        .literature__heading {
+            /*font-family: var(--font-heading);*/
+            /*font-weight: 500;*/
+            /*font-style: italic;*/
+            font-size: 32px;
+            line-height: 36px;
+            /*color: #303F64;*/
+            /*text-transform: uppercase;*/
+        }
+
+        .literature__list {
+
+        }
+            .literature__item {
+                margin-top: 28px;
+            }
+
+            .literature__item:first-child {
+                /*margin-top: 0;*/
+            }
+                .literature__title {
+                    /*margin-right: 4px;*/
+                    /*font-weight: normal;*/
+                    font-size: 22px;
+                    line-height: 28px;
+                    /*color: #0B1E3A;*/
+                }
+
+                .literature__details {
+                    /*padding: 4px 8px;*/
+                    /*font-weight: bold;*/
+                    font-size: 24px;
+                    line-height: 30px;
+                    /*color: #303F64;*/
+                    /*text-decoration: 1.5px underline currentColor;*/
+                    /*text-underline-offset: 2px;*/
+                    /*transition: text-decoration-color var(--transition-hover);*/
+                }
+
+                .literature__details:hover {
+                    /*text-decoration-color: transparent;*/
+                }
+}
+
+
+
+@media (width < 740px) {
+
+    .literature {
+
+    }
+        .literature__heading {
+            /*font-family: var(--font-heading);*/
+            /*font-weight: 500;*/
+            /*font-style: italic;*/
+            /*font-size: 28px;*/
+            /*line-height: 34px;*/
+            /*color: #303F64;*/
+            /*text-transform: uppercase;*/
+        }
+
+        .literature__list {
+
+        }
+            .literature__item {
+                /*margin-top: 24px;*/
+            }
+
+            .literature__item:first-child {
+                /*margin-top: 0;*/
+            }
+                .literature__title {
+                    /*margin-right: 4px;*/
+                    /*font-weight: normal;*/
+                    /*font-size: 20px;*/
+                    /*line-height: 26px;*/
+                    /*color: #0B1E3A;*/
+                }
+
+                .literature__details {
+                    /*padding: 4px 8px;*/
+                    /*font-weight: bold;*/
+                    /*font-size: 22px;*/
+                    /*line-height: 28px;*/
+                    /*color: #303F64;*/
+                    /*text-decoration: 1.5px underline currentColor;*/
+                    /*text-underline-offset: 2px;*/
+                    /*transition: text-decoration-color var(--transition-hover);*/
+                }
+
+                .literature__details:hover {
+                    /*text-decoration-color: transparent;*/
+                }
+}
+
