@@ -132,4 +132,26 @@
 
 
 
+    /* Аккордеон */
+
+    const accordionItems = document.querySelectorAll(".accordion__item");
+
+    accordionItems.forEach(item => {
+        const $handler = item.querySelector(".accordion__handler");
+
+        $handler.addEventListener("click", () => {
+            const isOpen = item.classList.contains("accordion__item--current");
+
+            accordionItems.forEach(otherItem => {
+                otherItem.classList.remove("accordion__item--current");
+            });
+
+            if (!isOpen) {
+                item.classList.add("accordion__item--current");
+            }
+        });
+    });
+
+
+
 })(jQuery);

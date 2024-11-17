@@ -1,0 +1,221 @@
+.accordion {
+
+}
+    .accordion__item {
+        margin-top: 30px;
+        border: 1px solid #303F64;
+        border-radius: 6px;
+    }
+
+    .accordion__item:first-child {
+        margin-top: 0;
+    }
+
+    .accordion__item--current {
+
+    }
+        .accordion__handler {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            width: 100%;
+            padding: 14px 60px 14px 16px;
+            background-color: transparent;
+            border: none;
+            border-radius: 5px;
+            font-family: var(--font-heading);
+            font-weight: 500;
+            font-style: italic;
+            font-size: 24px;
+            line-height: 24px;
+            color: #303F64;
+            text-transform: uppercase;
+            text-align: left;
+            cursor: pointer;
+            transition: background-color var(--transition-hover);
+        }
+
+        .accordion__handler:hover {
+            background-color: rgb(255 255 255 / 50%);
+        }
+            .accordion__handler::after {
+                content: "";
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                margin-top: -12px;
+                display: block;
+                width: 24px;
+                height: 24px;
+                background-image: url("../vectors/accordion-chevron.svg");
+                background-size: 24px 24px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                transition: transform 300ms ease;
+            }
+
+            .accordion__item--current .accordion__handler::after {
+                transform: scaleY(-1);
+            }
+
+        .accordion__dropdown {
+            display: none;
+            animation: var(--slide-bottom-faster);
+            padding: 16px 16px 20px;
+        }
+
+        .accordion__item--current .accordion__dropdown {
+            display: block;
+        }
+
+
+
+@media (1700px <= width) {
+
+    .accordion {
+
+    }
+        .accordion__item {
+            margin-top: 40px;
+            /*border: 1px solid #303F64;*/
+            /*border-radius: 6px;*/
+        }
+
+        .accordion__item:first-child {
+            /*margin-top: 0;*/
+        }
+
+        .accordion__item--current {
+
+        }
+            .accordion__handler {
+                /*position: relative;*/
+                /*display: inline-block;*/
+                /*vertical-align: top;*/
+                /*width: 100%;*/
+                padding: 20px 64px 20px 20px;
+                /*background-color: transparent;*/
+                /*border: none;*/
+                /*border-radius: 5px;*/
+                /*font-family: var(--font-heading);*/
+                /*font-weight: 500;*/
+                /*font-style: italic;*/
+                font-size: 26px;
+                line-height: 30px;
+                /*color: #303F64;*/
+                /*text-transform: uppercase;*/
+                /*text-align: left;*/
+                /*cursor: pointer;*/
+                /*transition: background-color var(--transition-hover);*/
+            }
+
+            .accordion__handler:hover {
+                /*background-color: rgb(255 255 255 / 50%);*/
+            }
+                .accordion__handler::after {
+                    /*content: "";*/
+                    /*position: absolute;*/
+                    /*right: 20px;*/
+                    /*top: 50%;*/
+                    /*margin-top: -12px;*/
+                    /*display: block;*/
+                    /*width: 24px;*/
+                    /*height: 24px;*/
+                    /*background-image: url("../vectors/accordion-chevron.svg");*/
+                    background-size: 28px 28px;
+                    /*background-repeat: no-repeat;*/
+                    /*background-position: center center;*/
+                    /*transition: transform 300ms ease;*/
+                }
+
+                .accordion__item--current .accordion__handler::after {
+                    /*transform: scaleY(-1);*/
+                }
+
+            .accordion__dropdown {
+                /*display: none;*/
+                /*animation: var(--slide-bottom-faster);*/
+                padding: 20px 20px 24px;
+            }
+
+            .accordion__item--current .accordion__dropdown {
+                /*display: block;*/
+            }
+}
+
+
+
+@media (width < 740px) {
+
+    .accordion {
+
+    }
+        .accordion__item {
+            margin-top: 24px;
+            /*border: 1px solid #303F64;*/
+            /*border-radius: 6px;*/
+        }
+
+        .accordion__item:first-child {
+            /*margin-top: 0;*/
+        }
+
+        .accordion__item--current {
+
+        }
+            .accordion__handler {
+                /*position: relative;*/
+                /*display: inline-block;*/
+                /*vertical-align: top;*/
+                /*width: 100%;*/
+                padding: 16px 60px 16px 16px;
+                /*background-color: transparent;*/
+                /*border: none;*/
+                /*border-radius: 5px;*/
+                /*font-family: var(--font-heading);*/
+                /*font-weight: 500;*/
+                /*font-style: italic;*/
+                font-size: 20px;
+                line-height: 23px;
+                /*color: #303F64;*/
+                /*text-transform: uppercase;*/
+                /*text-align: left;*/
+                /*cursor: pointer;*/
+                /*transition: background-color var(--transition-hover);*/
+            }
+
+            .accordion__handler:hover {
+                /*background-color: rgb(255 255 255 / 50%);*/
+            }
+                .accordion__handler::after {
+                    /*content: "";*/
+                    /*position: absolute;*/
+                    /*right: 20px;*/
+                    /*top: 50%;*/
+                    /*margin-top: -12px;*/
+                    /*display: block;*/
+                    /*width: 24px;*/
+                    /*height: 24px;*/
+                    /*background-image: url("../vectors/accordion-chevron.svg");*/
+                    /*background-size: 24px 24px;*/
+                    /*background-repeat: no-repeat;*/
+                    /*background-position: center center;*/
+                    /*transition: transform 300ms ease;*/
+                }
+
+                .accordion__item--current .accordion__handler::after {
+                    /*transform: scaleY(-1);*/
+                }
+
+            .accordion__dropdown {
+                /*display: none;*/
+                /*animation: var(--slide-bottom-faster);*/
+                /*padding: 16px 16px 20px;*/
+            }
+
+            .accordion__item--current .accordion__dropdown {
+                /*display: block;*/
+            }
+}
+
+
