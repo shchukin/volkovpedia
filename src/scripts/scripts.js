@@ -193,4 +193,31 @@
     });
 
 
+    /* Карусели */
+
+    document.querySelectorAll('.carousel').forEach(($carousel) => {
+
+        if( $carousel.classList.contains('carousel--js-init-day') ) {
+            new Swiper($carousel.querySelector('.swiper'), {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                autoHeight: true,
+                spaceBetween: 24,
+                navigation: {
+                    prevEl: $carousel.querySelector('.carousel__button--prev'),
+                    nextEl: $carousel.querySelector('.carousel__button--next'),
+                    disabledClass: 'carousel__button--disabled',
+                },
+                // pagination: {
+                //     el: $carousel.querySelector('.carousel__pagination'),
+                //     type: "fraction", /* можно переделать на bullets, но когда добавлено много слайдов с проектами, они не влезают */
+                //     bulletClass: 'carousel__bullet',
+                //     bulletActiveClass: 'carousel__bullet--current',
+                //     clickable: true
+                // }
+
+            });
+        }
+    });
+
 })(jQuery);

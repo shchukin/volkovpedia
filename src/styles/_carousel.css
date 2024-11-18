@@ -1,0 +1,191 @@
+.carousel {
+
+}
+
+/* Довольно запарно выключать слайдер на десктопах скриптом.
+   Проще перебить пару стилей:
+ */
+.carousel--css-disable-on-desktop {
+
+}
+
+@media (740px <= width) {
+
+    .carousel--css-disable-on-desktop {
+
+    }
+        .carousel--css-disable-on-desktop .carousel__widget .swiper {
+            overflow: visible;
+        }
+            .carousel--css-disable-on-desktop .carousel__widget .swiper-wrapper {
+                height: auto !important;
+                transform: none !important;
+            }
+                .carousel--css-disable-on-desktop .swiper-slide {
+                    width: auto !important;
+                    margin: 0 !important;
+                }
+
+        .carousel--css-disable-on-desktop .carousel__pagination {
+            display: none;
+        }
+}
+
+
+
+
+/*!* Default bullets *!*/
+
+/*@media (740px <= width) {*/
+
+/*    .carousel__pagination {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
+
+/*@media (width < 740px) {*/
+
+/*    .carousel--css-default-bullets .carousel__pagination {*/
+/*        margin-top: 18px;*/
+/*        display: flex;*/
+/*        align-items: center;*/
+/*        justify-content: center;*/
+/*        !* На случай типа fraction: *!*/
+/*        font-size: 15px;*/
+/*        line-height: 20px;*/
+/*        color: currentColor;*/
+/*        text-align: center;*/
+/*    }*/
+/*        .carousel--css-default-bullets .carousel__bullet {*/
+/*            flex-shrink: 0;*/
+/*            width: 28px;*/
+/*            height: 40px;*/
+/*            display: flex;*/
+/*            align-items: center;*/
+/*            justify-content: center;*/
+/*            cursor: pointer;*/
+/*        }*/
+/*            .carousel--css-default-bullets .carousel__bullet::after {*/
+/*                content: "";*/
+/*                display: block;*/
+/*                width: 16px;*/
+/*                height: 16px;*/
+/*                border-radius: 50%;*/
+/*                background-color: #666666;*/
+/*            }*/
+
+/*            .carousel--css-default-bullets .carousel__bullet--current::after {*/
+/*                background-color: currentColor;*/
+/*            }*/
+
+/*    .carousel--css-default-bullets.carousel--not-enough-slides .carousel__pagination {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
+
+
+
+/* Default arrows */
+
+.carousel--css-skin-day {
+    position: relative;
+    padding: 39px 98px 40px;
+}
+    .carousel--css-skin-day .carousel__widget {
+
+    }
+        .carousel--css-skin-day .swiper {
+
+        }
+            .carousel--css-skin-day .swiper-wrapper {
+
+            }
+
+    .carousel--css-skin-day .carousel__button {
+        position: absolute;
+        top: 164px;
+        width: 70px;
+        height: 70px;
+        padding: 0;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color var(--transition-hover);
+    }
+
+    .carousel--css-skin-day .carousel__button:hover {
+        background-color: #303F64;
+    }
+
+    .carousel--css-skin-day .carousel__button--disabled,
+    .carousel--css-skin-day .carousel__button--disabled:hover {
+        background-color: transparent;
+        opacity: 50%;
+        cursor: default;
+        transition: none;
+    }
+
+    .carousel--css-skin-day .carousel__button--prev {
+        left: 14px;
+    }
+
+    .carousel--css-skin-day .carousel__button--next {
+        right: 14px;
+    }
+        .carousel--css-skin-day .carousel__chevron {
+            vertical-align: top;
+            stroke: #303F64;
+            transition: stroke var(--transition-hover);
+        }
+
+        .carousel--css-skin-day .carousel__button--prev .carousel__chevron {
+            margin-right: 4px;
+        }
+
+        .carousel--css-skin-day .carousel__button--next .carousel__chevron {
+            margin-left: 4px;
+        }
+
+        .carousel--css-skin-day .carousel__button:not(.carousel__button--disabled):hover .carousel__chevron {
+            stroke: #EBD7B2;
+        }
+
+
+
+.carousel--css-skin-day.carousel--not-enough-slides .carousel__button {
+    display: none;
+}
+
+
+@media (1850px <= width) {
+
+    .carousel--css-skin-day {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+        .carousel--css-skin-day .carousel__button--prev {
+            left: -74px;
+        }
+
+        .carousel--css-skin-day .carousel__button--next {
+            right: -74px;
+        }
+}
+
+
+@media (width < 740px) {
+
+    .carousel--css-skin-day {
+        padding-left: 0;
+        padding-right: 0;
+    }
+        .carousel--css-skin-day .carousel__button {
+            display: none;
+        }
+}
+
+

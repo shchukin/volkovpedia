@@ -54,7 +54,7 @@
     }
 
     .performance__preview:hover {
-        filter: brightness(110%) contrast(110%);
+        filter: brightness(105%) contrast(105%);
     }
         .performance__cut {
             margin-top: -32px;

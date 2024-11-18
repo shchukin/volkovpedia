@@ -1,0 +1,29 @@
+.day {
+
+}
+    .day__heading {
+
+    }
+
+    .day__body {
+        display: grid;
+        grid-template-columns: 500px 680px;
+        border: 2px solid #303F64;
+        border-radius: 24px;
+    }
+        .day__sidebar {
+            border-right: 2px solid #7B7C83;
+        }
+            .day__number {
+
+            }
+
+            .day__month {
+
+            }
+
+        .day__carousel {
+            background-color: #EBD7B2;
+            border-top-right-radius: 24px;
+            border-bottom-right-radius: 24px;
+        }

@@ -1,5 +1,6 @@
 @import url("_fonts.css");
 @import url("../vendors/normalize/normalize.css");
+@import url("../vendors/swiper/swiper-bundle.min.css");
 @import url("_box-sizing.css");
 @import url("_visuallyhidden.css");
 @import url("_root.css");
@@ -55,5 +56,8 @@
 @import url("_troupe.css");
 @import url("_events.css");
 @import url("_performance.css");
+@import url("_carousel.css");
+@import url("_card.css");
+@import url("_day.css");
 
 
