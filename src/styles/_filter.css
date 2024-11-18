@@ -169,33 +169,38 @@
             display: block;
             width: 100%;
             border: none;
-            padding: 14px 60px 14px 16px;
+            padding: 9px 60px 9px 16px;
             background-color: #303F64;
-            border-radius: 25px;
+            border-radius: 20px;
+            font-family: var(--font-heading);
+            font-weight: 500;
+            font-style: italic;
             font-size: 16px;
             line-height: 22px;
             text-align: left;
+            text-transform: uppercase;
             color: #FFFFFF;
             cursor: pointer;
         }
-            .filter--responsive .filter__chevron {
+            .filter--responsive::after {
+                content: "";
                 position: absolute;
-                right: 13px;
+                right: 16px;
                 top: 50%;
-                margin-top: -12px;
+                margin-top: -9px;
                 vertical-align: top;
-                width: 24px;
-                height: 24px;
-                fill: currentColor;
+                width: 18px;
+                height: 18px;
+                background-image: url("../vectors/filters-responsive-chevron.svg");
             }
 
         .filter--responsive .filter__dropdown {
             display: none;
-            box-shadow: inset 0 0 0 1px #F8F0E5;
+            box-shadow: inset 0 0 0 1px #303F64;
             border-radius: 25px;
-            margin-top: -50px;
-            padding-top: 60px;
-            padding-bottom: 10px;
+            margin-top: -40px;
+            padding-top: 45px;
+            padding-bottom: 13px;
             /*align-items: center;*/
             /*gap: 30px;*/
         }
@@ -204,22 +209,25 @@
             display: block;
         }
             .filter--responsive .filter__list {
-                /*display: flex;*/
+                display: block;
                 /*align-items: center;*/
                 /*flex-wrap: wrap;*/
-                gap: 10px;
             }
                 .filter--responsive .filter__item {
                     /*background-color: transparent;*/
-                    /*border: 1px solid currentColor;*/
-                    padding: 7px 19px;
+                    display: flex;
+                    align-items: center;
+                    border: none;
+                    width: 100%;
+                    padding: 7px 16px;
                     /*border-radius: 22px;*/
                     /*font-family: var(--font-heading);*/
-                    /*font-weight: 500;*/
+                    font-weight: 500;
                     /*font-style: italic;*/
-                    font-size: 18px;
-                    line-height: 22px;
-                    /*color: #303F64;*/
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #303F64;
+                    text-align: left;
                     /*white-space: nowrap;*/
                     /*text-transform: uppercase;*/
                     /*cursor: pointer;*/
@@ -227,14 +235,22 @@
                 }
 
                 .filter--responsive .filter__item:hover {
-                    /*background-color: var(--action-color-hover);*/
+                    background-color: transparent;
                 }
 
                 .filter--responsive .filter__item--current,
                 .filter--responsive .filter__item--current:hover {
-                    /*background-color: #303F64;*/
-                    /*color: #F8F0E5;*/
-                    /*cursor: default;*/
+                    background-color: transparent;
+                    color: #303F64;
                 }
+                    .filter--responsive .filter__item--current::before {
+                        content: "";
+                        display: block;
+                        width: 9px;
+                        height: 9px;
+                        background-color: currentColor;
+                        border-radius: 50%;
+                        margin-right: 6px;
+                    }
 }
 
