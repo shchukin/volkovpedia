@@ -138,6 +138,8 @@
     }
         .carousel--css-skin-day .carousel__chevron {
             vertical-align: top;
+            width: 26px;
+            height: auto;
             stroke: #303F64;
             transition: stroke var(--transition-hover);
         }
@@ -156,36 +158,92 @@
 
 
 
-.carousel--css-skin-day.carousel--not-enough-slides .carousel__button {
-    display: none;
-}
 
-
-@media (1850px <= width) {
+@media (1700px <= width) {
 
     .carousel--css-skin-day {
-        padding-left: 50px;
-        padding-right: 50px;
+        /*position: relative;*/
+        padding: 50px 94px 60px;
     }
+        .carousel--css-skin-day .carousel__widget {
+
+        }
+            .carousel--css-skin-day .swiper {
+
+            }
+                .carousel--css-skin-day .swiper-wrapper {
+
+                }
+
+        .carousel--css-skin-day .carousel__button {
+            /*position: absolute;*/
+            top: 222px;
+            /*width: 70px;*/
+            /*height: 70px;*/
+            /*padding: 0;*/
+            /*border: none;*/
+            /*display: flex;*/
+            /*align-items: center;*/
+            /*justify-content: center;*/
+            /*background-color: transparent;*/
+            /*border-radius: 50%;*/
+            /*cursor: pointer;*/
+            /*transition: background-color var(--transition-hover);*/
+        }
+
+        .carousel--css-skin-day .carousel__button:hover {
+            /*background-color: #303F64;*/
+        }
+
+        .carousel--css-skin-day .carousel__button--disabled,
+        .carousel--css-skin-day .carousel__button--disabled:hover {
+            /*background-color: transparent;*/
+            /*opacity: 50%;*/
+            /*cursor: default;*/
+            /*transition: none;*/
+        }
+
         .carousel--css-skin-day .carousel__button--prev {
-            left: -74px;
+            left: 12px;
         }
 
         .carousel--css-skin-day .carousel__button--next {
-            right: -74px;
+            right: 12px;
         }
+            .carousel--css-skin-day .carousel__chevron {
+                /*vertical-align: top;*/
+                /*stroke: #303F64;*/
+                /*transition: stroke var(--transition-hover);*/
+            }
+
+            .carousel--css-skin-day .carousel__button--prev .carousel__chevron {
+                /*margin-right: 4px;*/
+            }
+
+            .carousel--css-skin-day .carousel__button--next .carousel__chevron {
+                /*margin-left: 4px;*/
+            }
+
+            .carousel--css-skin-day .carousel__button:not(.carousel__button--disabled):hover .carousel__chevron {
+                /*stroke: #EBD7B2;*/
+            }
 }
 
 
-@media (width < 740px) {
 
-    .carousel--css-skin-day {
-        padding-left: 0;
-        padding-right: 0;
-    }
-        .carousel--css-skin-day .carousel__button {
-            display: none;
-        }
-}
+
+/*}*/
+
+
+/*@media (width < 740px) {*/
+
+/*    .carousel--css-skin-day {*/
+/*        padding-left: 0;*/
+/*        padding-right: 0;*/
+/*    }*/
+/*        .carousel--css-skin-day .carousel__button {*/
+/*            display: none;*/
+/*        }*/
+/*}*/
 
 

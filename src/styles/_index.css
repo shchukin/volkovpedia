@@ -1,0 +1,14 @@
+.index {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+
+
+@media (1700px <= width) {
+
+    .index {
+        gap: 100px;
+    }
+}
