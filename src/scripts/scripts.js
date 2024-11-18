@@ -156,23 +156,23 @@
 
     /* Фильтры */
 
-    const $filters = document.querySelectorAll('.filters');
+    const $filter = document.querySelectorAll('.filter');
 
-    $filters.forEach(filtersContainer => {
-        const $filterHandler = filtersContainer.querySelector('.filters__handler');
-        const $filterItem = filtersContainer.querySelectorAll('.filter__item');
+    $filter.forEach(filterContainer => {
+        const $filterHandler = filterContainer.querySelector('.filter__handler');
+        const $filterItem = filterContainer.querySelectorAll('.filter__item');
 
         $filterHandler.addEventListener('click', function () {
-            filtersContainer.classList.toggle('filters--expanded');
+            filterContainer.classList.toggle('filter--expanded');
         });
 
         $filterItem.forEach(item => {
             item.addEventListener('click', () => {
                 // Remove 'filter__item--current' class from all items within this component
-                $filterItem.forEach(i => i.classList.remove('filters__item--current'));
+                $filterItem.forEach(i => i.classList.remove('filter__item--current'));
 
                 // Add 'filter__item--current' class to the clicked item
-                item.classList.add('filters__item--current');
+                item.classList.add('filter__item--current');
 
                 // Update the content of the handler button
                 $filterHandler.textContent = item.textContent;
