@@ -1,0 +1,208 @@
+.troupe {
+
+}
+    .troupe__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .troupe__switch {
+        margin-top: 40px;
+    }
+
+    .troupe__filter {
+        margin-top: 27px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .troupe__description {
+        margin-top: 24px;
+    }
+
+    .troupe__content {
+        margin-top: 40px;
+    }
+        .troupe__section {
+            margin-top: 40px;
+        }
+
+        .troupe__section:first-child {
+            margin-top: 0;
+        }
+            .troupe__sub-heading {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-family: var(--font-heading);
+                font-weight: 500;
+                font-style: italic;
+                font-size: 28px;
+                line-height: 33px;
+                color: #303F64;
+                text-transform: uppercase;
+            }
+
+            .troupe__person {
+                margin-top: 18px;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 25px;
+                color: #303F64;
+            }
+
+            .troupe__post {
+                margin-top: 10px;
+                font-size: 16px;
+                line-height: 22px;
+                color: #6073A2;
+            }
+
+            .troupe__list {
+                margin-top: 24px;
+                font-size: 18px;
+                line-height: 25px;
+            }
+
+
+
+@media (1700px <= width) {
+
+    .troupe {
+
+    }
+        .troupe__heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+            /*text-align: center;*/
+        }
+
+        .troupe__switch {
+            /*margin-top: 40px;*/
+        }
+
+        .troupe__filter {
+            /*margin-top: 27px;*/
+            /*padding-top: 16px;*/
+            /*padding-bottom: 16px;*/
+        }
+
+        .troupe__description {
+            /*margin-top: 24px;*/
+        }
+
+        .troupe__content {
+            margin-top: 80px;
+        }
+            .troupe__section {
+                margin-top: 80px;
+            }
+
+            .troupe__section:first-child {
+                /*margin-top: 0;*/
+            }
+                .troupe__sub-heading {
+                    /*margin-top: 0;*/
+                    /*margin-bottom: 0;*/
+                    /*font-family: var(--font-heading);*/
+                    /*font-weight: 500;*/
+                    /*font-style: italic;*/
+                    font-size: 32px;
+                    line-height: 37px;
+                    /*color: #303F64;*/
+                    /*text-transform: uppercase;*/
+                }
+
+                .troupe__person {
+                    margin-top: 24px;
+                    /*font-weight: 600;*/
+                    font-size: 20px;
+                    line-height: 27px;
+                    /*color: #303F64;*/
+                }
+
+                .troupe__post {
+                    /*margin-top: 10px;*/
+                    font-size: 18px;
+                    line-height: 25px;
+                    /*color: #6073A2;*/
+                }
+
+                .troupe__list {
+                    /*margin-top: 24px;*/
+                    font-size: 20px;
+                    line-height: 27px;
+                }
+}
+
+
+
+@media (width < 740px) {
+
+    .troupe {
+
+    }
+        .troupe__heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+            /*text-align: center;*/
+        }
+
+        .troupe__switch {
+            margin-top: 24px;
+        }
+
+        .troupe__filter {
+            margin-top: 40px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .troupe__description {
+            margin-top: 24px;
+        }
+
+        .troupe__content {
+            margin-top: 60px;
+        }
+            .troupe__section {
+                margin-top: 60px;
+            }
+
+            .troupe__section:first-child {
+                /*margin-top: 0;*/
+            }
+                .troupe__sub-heading {
+                    /*margin-top: 0;*/
+                    /*margin-bottom: 0;*/
+                    /*font-family: var(--font-heading);*/
+                    /*font-weight: 500;*/
+                    /*font-style: italic;*/
+                    font-size: 22px;
+                    line-height: 26px;
+                    /*color: #303F64;*/
+                    /*text-transform: uppercase;*/
+                }
+
+                .troupe__person {
+                    margin-top: 16px;
+                    /*font-weight: 600;*/
+                    font-size: 16px;
+                    line-height: 22px;
+                    /*color: #303F64;*/
+                }
+
+                .troupe__post {
+                    margin-top: 8px;
+                    font-size: 14px;
+                    line-height: 19px;
+                    /*color: #6073A2;*/
+                }
+
+                .troupe__list {
+                    margin-top: 24px;
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+}
+

@@ -17,6 +17,7 @@
         color: #303F64;
         white-space: nowrap;
         text-transform: uppercase;
+        text-decoration: none;
         cursor: pointer;
         transition: background-color var(--transition-hover);
     }
