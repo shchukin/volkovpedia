@@ -132,4 +132,65 @@
 
 
 
+    /* Аккордеон */
+
+    const accordionItems = document.querySelectorAll(".accordion__item");
+
+    accordionItems.forEach(item => {
+        const $handler = item.querySelector(".accordion__handler");
+
+        $handler.addEventListener("click", () => {
+            const isOpen = item.classList.contains("accordion__item--current");
+
+            accordionItems.forEach(otherItem => {
+                otherItem.classList.remove("accordion__item--current");
+            });
+
+            if (!isOpen) {
+                item.classList.add("accordion__item--current");
+            }
+        });
+    });
+
+
+
+    /* Фильтры */
+
+    const $filter = document.querySelectorAll('.filter');
+
+    $filter.forEach($filterContainer => {
+        const $filterHandler = $filterContainer.querySelector('.filter__handler');
+        const $filterItem = $filterContainer.querySelectorAll('.filter__item');
+
+        $filterHandler.addEventListener('click', function () {
+            $filterContainer.classList.toggle('filter--expanded');
+        });
+
+        $filterItem.forEach(item => {
+            item.addEventListener('click', () => {
+                $filterItem.forEach(i => i.classList.remove('filter__item--current'));
+                item.classList.add('filter__item--current');
+                $filterHandler.textContent = item.textContent;
+                $filterContainer.classList.remove('filter--expanded');
+            });
+        });
+    });
+
+
+    /* Свичт */
+
+    const $switch = document.querySelectorAll('.switch');
+
+    $switch.forEach($switchContainer => {
+        const $switchItem = $switchContainer.querySelectorAll('.switch__item');
+
+        $switchItem.forEach(item => {
+            item.addEventListener('click', () => {
+                $switchItem.forEach(i => i.classList.remove('switch__item--current'));
+                item.classList.add('switch__item--current');
+            });
+        });
+    });
+
+
 })(jQuery);

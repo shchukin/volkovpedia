@@ -18,7 +18,7 @@
 
         <!-- assets -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles/styles.css?1731655778">
+        <link rel="stylesheet" href="../styles/styles.css?1731914963">
 
     </head>
     <body>
@@ -116,10 +116,20 @@
                         </div>
                         <div class="feed__filter">
                             <div class="filter">
-                                <button class="filter__action filter__action--current" type="button">Все</button>
-                                <button class="filter__action" type="button">2000 – 2008</button>
-                                <button class="filter__action" type="button">2008 – 2018</button>
-                                <button class="filter__action" type="button">2019 – 2023</button>
+                                <button class="filter__handler" type="button">
+                                    ФИЛЬТРЫ
+                                    <svg class="filter__chevron" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 16L3 8L21 8L12 16Z"/>
+                                    </svg>
+                                </button>
+                                <div class="filter__dropdown">
+                                    <div class="filter__list">
+                                        <button class="filter__item filter__item--current" type="button">Все</button>
+                                        <button class="filter__item" type="button">2000 – 2008</button>
+                                        <button class="filter__item" type="button">2008 – 2018</button>
+                                        <button class="filter__item" type="button">2019 – 2023</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="feed__list">
@@ -553,7 +563,7 @@
         <script src="../vendors/inputmask/jquery.inputmask.min.js"></script>
         <script src="../vendors/inputmask.phone/inputmask.phone.extensions.min.js"></script>
         <script src="../vendors/inputmask.phone/phone-codes/phone-ru.min.js"></script>
-        <script src="../scripts/scripts.js?1731655778"></script>
+        <script src="../scripts/scripts.js?1731914963"></script>
 
     </body>
 </html>
