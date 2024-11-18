@@ -182,7 +182,7 @@
             color: #FFFFFF;
             cursor: pointer;
         }
-            .filter--responsive::after {
+            .filter--responsive .filter__handler::after {
                 content: "";
                 position: absolute;
                 right: 16px;
@@ -192,6 +192,10 @@
                 width: 18px;
                 height: 18px;
                 background-image: url("../vectors/filters-responsive-chevron.svg");
+            }
+
+            .filter--expanded.filter--responsive .filter__handler::after {
+                transform: scaleY(-1);
             }
 
         .filter--responsive .filter__dropdown {

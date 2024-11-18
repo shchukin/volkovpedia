@@ -9,16 +9,20 @@
 
     .troupe__switch {
         margin-top: 40px;
+        margin-bottom: 27px;
     }
 
     .troupe__filter {
-        margin-top: 27px;
+        position: sticky;
+        top: var(--header-height);
+        background-color: #F9F0E5;
         padding-top: 16px;
         padding-bottom: 16px;
     }
 
     .troupe__description {
         margin-top: 24px;
+        max-width: 800px;
     }
 
     .troupe__content {
@@ -82,13 +86,13 @@
         }
 
         .troupe__filter {
-            /*margin-top: 27px;*/
             /*padding-top: 16px;*/
             /*padding-bottom: 16px;*/
         }
 
         .troupe__description {
             /*margin-top: 24px;*/
+            max-width: 1148px;
         }
 
         .troupe__content {
@@ -150,12 +154,11 @@
 
         .troupe__switch {
             margin-top: 24px;
+            margin-bottom: 14px;
         }
 
         .troupe__filter {
-            margin-top: 40px;
-            padding-top: 0;
-            padding-bottom: 0;
+
         }
 
         .troupe__description {

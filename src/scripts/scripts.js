@@ -158,24 +158,20 @@
 
     const $filter = document.querySelectorAll('.filter');
 
-    $filter.forEach(filterContainer => {
-        const $filterHandler = filterContainer.querySelector('.filter__handler');
-        const $filterItem = filterContainer.querySelectorAll('.filter__item');
+    $filter.forEach($filterContainer => {
+        const $filterHandler = $filterContainer.querySelector('.filter__handler');
+        const $filterItem = $filterContainer.querySelectorAll('.filter__item');
 
         $filterHandler.addEventListener('click', function () {
-            filterContainer.classList.toggle('filter--expanded');
+            $filterContainer.classList.toggle('filter--expanded');
         });
 
         $filterItem.forEach(item => {
             item.addEventListener('click', () => {
-                // Remove 'filter__item--current' class from all items within this component
                 $filterItem.forEach(i => i.classList.remove('filter__item--current'));
-
-                // Add 'filter__item--current' class to the clicked item
                 item.classList.add('filter__item--current');
-
-                // Update the content of the handler button
                 $filterHandler.textContent = item.textContent;
+                $filterContainer.classList.remove('filter--expanded');
             });
         });
     });
