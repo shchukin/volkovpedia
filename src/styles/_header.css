@@ -79,13 +79,14 @@
                     line-height: 22px;
                     color: #F8F0E5;
                     white-space: nowrap;
-                    text-decoration: none;
+                    text-decoration: 1px underline transparent;
+                    text-underline-offset: 2px;
                     text-transform: uppercase;
                     transition: color var(--transition-hover);
                 }
 
                 .header__link:hover {
-                    color: #FFFFFF;
+                    text-decoration-color: currentColor;
                 }
 
                 .header__link--current {
