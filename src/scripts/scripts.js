@@ -176,4 +176,21 @@
         });
     });
 
+
+    /* Свичт */
+
+    const $switch = document.querySelectorAll('.switch');
+
+    $switch.forEach($switchContainer => {
+        const $switchItem = $switchContainer.querySelectorAll('.switch__item');
+
+        $switchItem.forEach(item => {
+            item.addEventListener('click', () => {
+                $switchItem.forEach(i => i.classList.remove('switch__item--current'));
+                item.classList.add('switch__item--current');
+            });
+        });
+    });
+
+
 })(jQuery);
