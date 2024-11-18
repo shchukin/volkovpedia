@@ -10,6 +10,10 @@
         margin-top: 32px;
     }
 
+    .content__unique-part:first-child {
+        margin-top: 2px;
+    }
+
 
 
 @media (1700px <= width) {
@@ -24,6 +28,10 @@
 
         .content__unique-part  {
             /*margin-top: 32px;*/
+        }
+
+        .content__unique-part:first-child {
+            margin-top: 6px;
         }
 }
 
@@ -41,6 +49,10 @@
 
         .content__unique-part  {
             margin-top: 16px;
+        }
+
+        .content__unique-part:first-child {
+            margin-top: 6px;
         }
 }
 
