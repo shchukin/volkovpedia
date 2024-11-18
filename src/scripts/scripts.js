@@ -156,15 +156,28 @@
 
     /* Фильтры */
 
-    $('.filters__handler').on('click', function () {
-        $(this).parents('.filters').toggleClass('filters--expanded');
-    });
+    const $filters = document.querySelectorAll('.filters');
 
-    $(document).on('keyup', function (event) {
-        if (event.keyCode === 27) {
-            $('.picker').removeClass('picker--expanded');
-        }
-    });
+    $filters.forEach(filtersContainer => {
+        const $filterHandler = filtersContainer.querySelector('.filters__handler');
+        const $filterItem = filtersContainer.querySelectorAll('.filter__item');
 
+        $filterHandler.addEventListener('click', function () {
+            filtersContainer.classList.toggle('filters--expanded');
+        });
+
+        $filterItem.forEach(item => {
+            item.addEventListener('click', () => {
+                // Remove 'filter__item--current' class from all items within this component
+                $filterItem.forEach(i => i.classList.remove('filters__item--current'));
+
+                // Add 'filter__item--current' class to the clicked item
+                item.classList.add('filters__item--current');
+
+                // Update the content of the handler button
+                $filterHandler.textContent = item.textContent;
+            });
+        });
+    });
 
 })(jQuery);

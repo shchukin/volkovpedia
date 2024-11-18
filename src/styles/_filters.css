@@ -13,45 +13,40 @@
         align-items: center;
         gap: 30px;
     }
-        .filters__item {
-
+        .filters__list {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px 20px;
         }
-
-        .filters__reset {
-            position: absolute;
-            right: 0;
-            top: 0;
-            display: inline-flex;
-            align-items: flex-start;
-            vertical-align: top;
-            gap: 12px;
-            background-color: transparent;
-            padding: 12px 0;
-            border: none;
-            font-family: var(--font-heading);
-            font-style: italic;
-            font-size: 16px;
-            line-height: 20px;
-            color: #F8F0E5;
-            text-transform: lowercase;
-            cursor: pointer;
-        }
-
-        .filters__reset:hover {
-            color: #E4BB6B;
-        }
-            .filters__funnel {
-                vertical-align: top;
-                position: relative;
-                top: 2px;
-                width: 18px;
-                height: 18px;
-                fill: currentColor;
+            .filter__item {
+                background-color: transparent;
+                border: 1px solid currentColor;
+                padding: 9px 31px;
+                border-radius: 22px;
+                font-family: var(--font-heading);
+                font-weight: 500;
+                font-style: italic;
+                font-size: 20px;
+                line-height: 24px;
+                color: #303F64;
+                white-space: nowrap;
+                text-transform: uppercase;
+                text-decoration: none;
+                cursor: pointer;
+                transition: background-color var(--transition-hover);
             }
 
-    .filters__tickets {
+            .filter__item:hover {
+                background-color: var(--yellow-action-color-hover);
+            }
 
-    }
+            .filters__item--current,
+            .filters__item--current:hover {
+                background-color: #303F64;
+                color: #F8F0E5;
+                cursor: default;
+            }
 
 
 
@@ -72,48 +67,37 @@
             /*align-items: center;*/
             gap: 40px;
         }
-            .filters__item {
-
+            .filters__list {
+                /*display: flex;*/
+                /*align-items: center;*/
+                /*gap: 20px;*/
             }
-
-            .filters__reset {
-                /*position: absolute;*/
-                /*right: 0;*/
-                top: 0;
-                /*display: inline-flex;*/
-                /*align-items: flex-start;*/
-                /*vertical-align: top;*/
-                gap: 16px;
-                /*background-color: transparent;*/
-                /*padding: 0;*/
-                padding-top: 16px;
-                padding-bottom: 16px;
-                /*border: none;*/
-                /*font-family: var(--font-heading);*/
-                /*font-style: italic;*/
-                font-size: 20px;
-                line-height: 24px;
-                /*color: #F8F0E5;*/
-                /*text-transform: lowercase;*/
-                /*cursor: pointer;*/
-            }
-
-            .filters__reset:hover {
-                /*color: #E4BB6B;*/
-            }
-
-                .filters__funnel {
-                    /*vertical-align: top;*/
-                    /*position: relative;*/
-                    /*top: 1px;*/
-                    width: 24px;
-                    height: 24px;
-                    /*fill: currentColor;*/
+                .filter__item {
+                    /*background-color: transparent;*/
+                    /*border: 1px solid currentColor;*/
+                    padding: 11px 23px;
+                    border-radius: 24px;
+                    /*font-family: var(--font-heading);*/
+                    /*font-weight: 500;*/
+                    /*font-style: italic;*/
+                    /*font-size: 20px;*/
+                    /*line-height: 24px;*/
+                    /*color: #303F64;*/
+                    /*text-transform: uppercase;*/
+                    /*cursor: pointer;*/
+                    /*transition: background-color var(--transition-hover);*/
                 }
 
-        .filters__tickets {
+                .filter__item:hover {
+                    /*background-color: var(--action-color-hover);*/
+                }
 
-        }
+                .filters__item--current,
+                .filters__item--current:hover {
+                    /*background-color: #303F64;*/
+                    /*color: #F8F0E5;*/
+                    /*cursor: default;*/
+                }
 }
 
 
@@ -121,27 +105,80 @@
 @media (width < 740px) {
 
     .filters {
+
+    }
+        .filters__handler {
+
+        }
+            .filters__chevron {
+
+            }
+
+        .filters__dropdown {
+
+        }
+            .filters__list {
+                /*display: flex;*/
+                /*align-items: center;*/
+                /*flex-wrap: wrap;*/
+                gap: 10px;
+            }
+                .filter__item {
+                    /*background-color: transparent;*/
+                    /*border: 1px solid currentColor;*/
+                    padding: 7px 19px;
+                    /*border-radius: 22px;*/
+                    /*font-family: var(--font-heading);*/
+                    /*font-weight: 500;*/
+                    /*font-style: italic;*/
+                    font-size: 18px;
+                    line-height: 22px;
+                    /*color: #303F64;*/
+                    /*white-space: nowrap;*/
+                    /*text-transform: uppercase;*/
+                    /*cursor: pointer;*/
+                    /*transition: background-color var(--transition-hover);*/
+                }
+
+                .filter__item:hover {
+                    /*background-color: var(--action-color-hover);*/
+                }
+
+                .filters__item--current,
+                .filters__item--current:hover {
+                    /*background-color: #303F64;*/
+                    /*color: #F8F0E5;*/
+                    /*cursor: default;*/
+                }
+}
+
+
+
+/* Вариант с выпдайкой на смартфонах */
+
+@media (width < 740px) {
+
+    .filters--responsive {
         /*position: relative;*/
         display: block;
         /*align-items: center;*/
         /*gap: 30px;*/
     }
-        .filters__handler {
+        .filters--responsive .filters__handler {
             position: relative;
             display: block;
             width: 100%;
             border: none;
             padding: 14px 60px 14px 16px;
-            background-color: transparent;
-            box-shadow: inset 0 0 0 1px #F8F0E5;
+            background-color: #303F64;
             border-radius: 25px;
             font-size: 16px;
             line-height: 22px;
             text-align: left;
-            color: inherit;
+            color: #FFFFFF;
             cursor: pointer;
         }
-            .filters__chevron {
+            .filters--responsive .filters__chevron {
                 position: absolute;
                 right: 13px;
                 top: 50%;
@@ -152,7 +189,7 @@
                 fill: currentColor;
             }
 
-        .filters__dropdown {
+        .filters--responsive .filters__dropdown {
             display: none;
             box-shadow: inset 0 0 0 1px #F8F0E5;
             border-radius: 25px;
@@ -163,56 +200,41 @@
             /*gap: 30px;*/
         }
 
-        .filters--expanded .filters__dropdown {
+        .filters--responsive.filters--expanded .filters__dropdown {
             display: block;
         }
-
-            .filters__item {
-
-            }
-                .filters__item .choice {
-                    border-left: 16px solid transparent;
-                    border-top: 2px solid transparent;
-                    border-bottom: 2px solid transparent;
-                }
-
-            .filters__reset {
-                position: static;
-                /*right: 0;*/
-                /*top: 0;*/
-                display: flex;
-                width: fit-content;
-                margin-left: auto;
-                /*align-items: flex-start;*/
-                /*vertical-align: top;*/
+            .filters--responsive .filters__list {
+                /*display: flex;*/
+                /*align-items: center;*/
+                /*flex-wrap: wrap;*/
                 gap: 10px;
-                /*background-color: transparent;*/
-                /*padding: 12px 0;*/
-                padding-right: 24px;
-                /*border: none;*/
-                /*font-family: var(--font-heading);*/
-                /*font-style: italic;*/
-                /*font-size: 16px;*/
-                /*line-height: 20px;*/
-                /*color: #F8F0E5;*/
-                /*text-transform: lowercase;*/
-                /*cursor: pointer;*/
             }
-
-            .filters__reset:hover {
-                /*color: #E4BB6B;*/
-            }
-                .filters__funnel {
-                    /*vertical-align: top;*/
-                    /*position: relative;*/
-                    top: 3px;
-                    width: 16px;
-                    height: 16px;
-                    /*fill: currentColor;*/
+                .filters--responsive .filter__item {
+                    /*background-color: transparent;*/
+                    /*border: 1px solid currentColor;*/
+                    padding: 7px 19px;
+                    /*border-radius: 22px;*/
+                    /*font-family: var(--font-heading);*/
+                    /*font-weight: 500;*/
+                    /*font-style: italic;*/
+                    font-size: 18px;
+                    line-height: 22px;
+                    /*color: #303F64;*/
+                    /*white-space: nowrap;*/
+                    /*text-transform: uppercase;*/
+                    /*cursor: pointer;*/
+                    /*transition: background-color var(--transition-hover);*/
                 }
 
-        .filters__tickets {
-            margin-top: 14px;
-        }
+                .filters--responsive .filter__item:hover {
+                    /*background-color: var(--action-color-hover);*/
+                }
+
+                .filters--responsive .filters__item--current,
+                .filters--responsive .filters__item--current:hover {
+                    /*background-color: #303F64;*/
+                    /*color: #F8F0E5;*/
+                    /*cursor: default;*/
+                }
 }
 
