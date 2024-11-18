@@ -1,10 +1,10 @@
-.filter {
+.static-filter {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 12px 20px;
 }
-    .filter__action {
+    .static-filter__action {
         background-color: transparent;
         border: 1px solid currentColor;
         padding: 9px 31px;
@@ -22,12 +22,12 @@
         transition: background-color var(--transition-hover);
     }
 
-    .filter__action:hover {
+    .static-filter__action:hover {
         background-color: var(--yellow-action-color-hover);
     }
 
-    .filter__action--current,
-    .filter__action--current:hover {
+    .static-filter__action--current,
+    .static-filter__action--current:hover {
         background-color: #303F64;
         color: #F8F0E5;
         cursor: default;
@@ -37,12 +37,12 @@
 
 @media (1700px <= width) {
 
-    .filter {
+    .static-filter {
         /*display: flex;*/
         /*align-items: center;*/
         /*gap: 20px;*/
     }
-        .filter__action {
+        .static-filter__action {
             /*background-color: transparent;*/
             /*border: 1px solid currentColor;*/
             padding: 11px 23px;
@@ -58,12 +58,12 @@
             /*transition: background-color var(--transition-hover);*/
         }
 
-        .filter__action:hover {
+        .static-filter__action:hover {
             /*background-color: var(--action-color-hover);*/
         }
 
-        .filter__action--current,
-        .filter__action--current:hover {
+        .static-filter__action--current,
+        .static-filter__action--current:hover {
             /*background-color: #303F64;*/
             /*color: #F8F0E5;*/
             /*cursor: default;*/
@@ -74,13 +74,13 @@
 
 @media (width < 740px) {
 
-    .filter {
+    .static-filter {
         /*display: flex;*/
         /*align-items: center;*/
         /*flex-wrap: wrap;*/
         gap: 10px;
     }
-        .filter__action {
+        .static-filter__action {
             /*background-color: transparent;*/
             /*border: 1px solid currentColor;*/
             padding: 7px 19px;
@@ -97,12 +97,12 @@
             /*transition: background-color var(--transition-hover);*/
         }
 
-        .filter__action:hover {
+        .static-filter__action:hover {
             /*background-color: var(--action-color-hover);*/
         }
 
-        .filter__action--current,
-        .filter__action--current:hover {
+        .static-filter__action--current,
+        .static-filter__action--current:hover {
             /*background-color: #303F64;*/
             /*color: #F8F0E5;*/
             /*cursor: default;*/
