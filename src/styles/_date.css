@@ -1,0 +1,79 @@
+.date {
+
+}
+    .date__preview {
+        display: block;
+    }
+        .date__image {
+            vertical-align: top;
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            transition: filter var(--transition-hover);
+        }
+
+        .date__preview:hover .date__image {
+            filter: brightness(105%) contrast(105%);
+        }
+
+    .date__body {
+        border: 1px solid #303F64;
+        border-top-width: 2px;
+        border-radius: 0 0 12px 12px;
+        padding: 22px 24px 18px;
+    }
+        .date__year {
+            font-family: var(--font-heading);
+            font-weight: normal;
+            font-style: italic;
+            font-size: 48px;
+            line-height: 56px;
+            color: #303F64;
+            text-align: center;
+        }
+
+        .date__heading {
+            margin-top: 16px;
+            margin-bottom: 0;
+            font-family: var(--font-heading);
+            font-weight: 500;
+            font-style: italic;
+            font-size: 26px;
+            line-height: 30px;
+            color: #303F64;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .date__sub-heading {
+            margin-top: 12px;
+            font-weight: 600;
+            font-size: 22px;
+            color: #6073A2;
+            text-align: center;
+        }
+
+        .date__description {
+            margin-top: 19px;
+            font-size: 16px;
+            line-height: 22px;
+            color: #303F64;
+            text-align: center;
+        }
+
+        .date__more {
+            margin-top: 16px;
+            display: block;
+            width: 46px;
+            height: 46px;
+            margin-left: auto;
+            margin-right: auto;
+            background-image: url("../vectors/date-more.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            text-indent: 200%;
+            white-space: nowrap;
+            overflow: hidden;
+        }

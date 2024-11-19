@@ -232,4 +232,10 @@
         }
     });
 
+
+
+    new Masonry( document.querySelector('.grid'), {
+        gutter: 16
+    });
+
 })(jQuery);
