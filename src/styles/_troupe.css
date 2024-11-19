@@ -22,13 +22,17 @@
 
     .troupe__description {
         margin-top: 24px;
+        padding-bottom: 40px;
         max-width: 800px;
     }
 
-    .troupe__content {
-        margin-top: 40px;
+    .troupe__body {
         max-width: 800px;
     }
+        .troupe__index {
+            padding-top: 30px;
+        }
+
         .troupe__section {
             margin-top: 40px;
         }
@@ -94,12 +98,16 @@
         .troupe__description {
             /*margin-top: 24px;*/
             max-width: 1148px;
+            padding-bottom: 80px;
         }
 
-        .troupe__content {
-            margin-top: 80px;
+        .troupe__body {
             max-width: 1148px;
         }
+            .troupe__index {
+                padding-top: 40px;
+            }
+
             .troupe__section {
                 margin-top: 80px;
             }
@@ -165,11 +173,16 @@
 
         .troupe__description {
             margin-top: 24px;
+            padding-bottom: 60px;
         }
 
-        .troupe__content {
-            margin-top: 60px;
+        .troupe__body {
+
         }
+            .troupe__index {
+                padding-top: 24px;
+            }
+
             .troupe__section {
                 margin-top: 60px;
             }
