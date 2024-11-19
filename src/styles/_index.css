@@ -12,3 +12,12 @@
         gap: 100px;
     }
 }
+
+
+
+@media (width < 740px) {
+
+    .index {
+        gap: 60px;
+    }
+}
