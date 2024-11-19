@@ -33,58 +33,6 @@
 
 
 
-
-/*!* Default bullets *!*/
-
-/*@media (740px <= width) {*/
-
-/*    .carousel__pagination {*/
-/*        display: none;*/
-/*    }*/
-/*}*/
-
-/*@media (width < 740px) {*/
-
-/*    .carousel--css-default-bullets .carousel__pagination {*/
-/*        margin-top: 18px;*/
-/*        display: flex;*/
-/*        align-items: center;*/
-/*        justify-content: center;*/
-/*        !* На случай типа fraction: *!*/
-/*        font-size: 15px;*/
-/*        line-height: 20px;*/
-/*        color: currentColor;*/
-/*        text-align: center;*/
-/*    }*/
-/*        .carousel--css-default-bullets .carousel__bullet {*/
-/*            flex-shrink: 0;*/
-/*            width: 28px;*/
-/*            height: 40px;*/
-/*            display: flex;*/
-/*            align-items: center;*/
-/*            justify-content: center;*/
-/*            cursor: pointer;*/
-/*        }*/
-/*            .carousel--css-default-bullets .carousel__bullet::after {*/
-/*                content: "";*/
-/*                display: block;*/
-/*                width: 16px;*/
-/*                height: 16px;*/
-/*                border-radius: 50%;*/
-/*                background-color: #666666;*/
-/*            }*/
-
-/*            .carousel--css-default-bullets .carousel__bullet--current::after {*/
-/*                background-color: currentColor;*/
-/*            }*/
-
-/*    .carousel--css-default-bullets.carousel--not-enough-slides .carousel__pagination {*/
-/*        display: none;*/
-/*    }*/
-/*}*/
-
-
-
 /* Default arrows */
 
 .carousel--css-skin-day {
@@ -101,60 +49,64 @@
 
             }
 
-    .carousel--css-skin-day .carousel__button {
-        position: absolute;
-        top: 164px;
-        width: 70px;
-        height: 70px;
-        padding: 0;
-        border: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: transparent;
-        border-radius: 50%;
-        cursor: pointer;
-        transition: background-color var(--transition-hover);
-    }
 
-    .carousel--css-skin-day .carousel__button:hover {
-        background-color: #303F64;
-    }
+    .carousel--css-skin-day .carousel__controls {
 
-    .carousel--css-skin-day .carousel__button--disabled,
-    .carousel--css-skin-day .carousel__button--disabled:hover {
-        background-color: transparent;
-        opacity: 50%;
-        cursor: default;
-        transition: none;
     }
-
-    .carousel--css-skin-day .carousel__button--prev {
-        left: 14px;
-    }
-
-    .carousel--css-skin-day .carousel__button--next {
-        right: 14px;
-    }
-        .carousel--css-skin-day .carousel__chevron {
-            vertical-align: top;
-            width: 26px;
-            height: auto;
-            stroke: #303F64;
-            transition: stroke var(--transition-hover);
+        .carousel--css-skin-day .carousel__button {
+            position: absolute;
+            top: 164px;
+            width: 70px;
+            height: 70px;
+            padding: 0;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color var(--transition-hover);
         }
 
-        .carousel--css-skin-day .carousel__button--prev .carousel__chevron {
-            margin-right: 4px;
+        .carousel--css-skin-day .carousel__button:hover {
+            background-color: #303F64;
         }
 
-        .carousel--css-skin-day .carousel__button--next .carousel__chevron {
-            margin-left: 4px;
+        .carousel--css-skin-day .carousel__button--disabled,
+        .carousel--css-skin-day .carousel__button--disabled:hover {
+            background-color: transparent;
+            opacity: 50%;
+            cursor: default;
+            transition: none;
         }
 
-        .carousel--css-skin-day .carousel__button:not(.carousel__button--disabled):hover .carousel__chevron {
-            stroke: #EBD7B2;
+        .carousel--css-skin-day .carousel__button--prev {
+            left: 14px;
         }
+
+        .carousel--css-skin-day .carousel__button--next {
+            right: 14px;
+        }
+            .carousel--css-skin-day .carousel__chevron {
+                vertical-align: top;
+                width: 26px;
+                height: auto;
+                stroke: #303F64;
+                transition: stroke var(--transition-hover);
+            }
+
+            .carousel--css-skin-day .carousel__button--prev .carousel__chevron {
+                margin-right: 4px;
+            }
+
+            .carousel--css-skin-day .carousel__button--next .carousel__chevron {
+                margin-left: 4px;
+            }
+
+            .carousel--css-skin-day .carousel__button:not(.carousel__button--disabled):hover .carousel__chevron {
+                stroke: #EBD7B2;
+            }
 
 
 
@@ -175,75 +127,176 @@
 
                 }
 
-        .carousel--css-skin-day .carousel__button {
-            /*position: absolute;*/
-            top: 222px;
-            /*width: 70px;*/
-            /*height: 70px;*/
-            /*padding: 0;*/
-            /*border: none;*/
-            /*display: flex;*/
-            /*align-items: center;*/
-            /*justify-content: center;*/
-            /*background-color: transparent;*/
-            /*border-radius: 50%;*/
-            /*cursor: pointer;*/
-            /*transition: background-color var(--transition-hover);*/
-        }
 
-        .carousel--css-skin-day .carousel__button:hover {
-            /*background-color: #303F64;*/
-        }
+        .carousel--css-skin-day .carousel__controls {
 
-        .carousel--css-skin-day .carousel__button--disabled,
-        .carousel--css-skin-day .carousel__button--disabled:hover {
-            /*background-color: transparent;*/
-            /*opacity: 50%;*/
-            /*cursor: default;*/
-            /*transition: none;*/
         }
-
-        .carousel--css-skin-day .carousel__button--prev {
-            left: 12px;
-        }
-
-        .carousel--css-skin-day .carousel__button--next {
-            right: 12px;
-        }
-            .carousel--css-skin-day .carousel__chevron {
-                /*vertical-align: top;*/
-                /*stroke: #303F64;*/
-                /*transition: stroke var(--transition-hover);*/
+            .carousel--css-skin-day .carousel__button {
+                /*position: absolute;*/
+                top: 222px;
+                /*width: 70px;*/
+                /*height: 70px;*/
+                /*padding: 0;*/
+                /*border: none;*/
+                /*display: flex;*/
+                /*align-items: center;*/
+                /*justify-content: center;*/
+                /*background-color: transparent;*/
+                /*border-radius: 50%;*/
+                /*cursor: pointer;*/
+                /*transition: background-color var(--transition-hover);*/
             }
 
-            .carousel--css-skin-day .carousel__button--prev .carousel__chevron {
-                /*margin-right: 4px;*/
+            .carousel--css-skin-day .carousel__button:hover {
+                /*background-color: #303F64;*/
             }
 
-            .carousel--css-skin-day .carousel__button--next .carousel__chevron {
-                /*margin-left: 4px;*/
+            .carousel--css-skin-day .carousel__button--disabled,
+            .carousel--css-skin-day .carousel__button--disabled:hover {
+                /*background-color: transparent;*/
+                /*opacity: 50%;*/
+                /*cursor: default;*/
+                /*transition: none;*/
             }
 
-            .carousel--css-skin-day .carousel__button:not(.carousel__button--disabled):hover .carousel__chevron {
-                /*stroke: #EBD7B2;*/
+            .carousel--css-skin-day .carousel__button--prev {
+                left: 12px;
             }
+
+            .carousel--css-skin-day .carousel__button--next {
+                right: 12px;
+            }
+                .carousel--css-skin-day .carousel__chevron {
+                    /*vertical-align: top;*/
+                    /*stroke: #303F64;*/
+                    /*transition: stroke var(--transition-hover);*/
+                }
+
+                .carousel--css-skin-day .carousel__button--prev .carousel__chevron {
+                    /*margin-right: 4px;*/
+                }
+
+                .carousel--css-skin-day .carousel__button--next .carousel__chevron {
+                    /*margin-left: 4px;*/
+                }
+
+                .carousel--css-skin-day .carousel__button:not(.carousel__button--disabled):hover .carousel__chevron {
+                    /*stroke: #EBD7B2;*/
+                }
 }
 
 
 
+@media (width < 740px) {
 
-/*}*/
+    .carousel--css-skin-day {
+        /*position: relative;*/
+        padding: 24px 24px 0;
+    }
+        .carousel--css-skin-day .carousel__widget {
+
+        }
+            .carousel--css-skin-day .swiper {
+
+            }
+                .carousel--css-skin-day .swiper-wrapper {
+
+                }
 
 
-/*@media (width < 740px) {*/
+        .carousel--css-skin-day .carousel__controls {
+            display: flex;
+            justify-content: center;
+        }
+            .carousel--css-skin-day .carousel__button {
+                flex-shrink: 0;
+                position: static;
+                /*top: 164px;*/
+                width: 40px;
+                height: 40px;
+                /*padding: 0;*/
+                /*border: none;*/
+                /*display: flex;*/
+                /*align-items: center;*/
+                /*justify-content: center;*/
+                /*background-color: transparent;*/
+                /*border-radius: 50%;*/
+                /*cursor: pointer;*/
+                /*transition: background-color var(--transition-hover);*/
+            }
 
-/*    .carousel--css-skin-day {*/
-/*        padding-left: 0;*/
-/*        padding-right: 0;*/
-/*    }*/
-/*        .carousel--css-skin-day .carousel__button {*/
-/*            display: none;*/
-/*        }*/
-/*}*/
+            .carousel--css-skin-day .carousel__button:hover {
+                /*background-color: #303F64;*/
+            }
+
+            .carousel--css-skin-day .carousel__button--disabled,
+            .carousel--css-skin-day .carousel__button--disabled:hover {
+                /*background-color: transparent;*/
+                /*opacity: 50%;*/
+                /*cursor: default;*/
+                /*transition: none;*/
+            }
+
+            .carousel--css-skin-day .carousel__button--prev {
+                /*left: 14px;*/
+            }
+
+            .carousel--css-skin-day .carousel__button--next {
+                /*right: 14px;*/
+            }
+                .carousel--css-skin-day .carousel__chevron {
+                    /*vertical-align: top;*/
+                    width: 11px;
+                    /*height: auto;*/
+                    /*stroke: #303F64;*/
+                    /*transition: stroke var(--transition-hover);*/
+                }
+
+                .carousel--css-skin-day .carousel__button--prev .carousel__chevron {
+                    /*margin-right: 4px;*/
+                }
+
+                .carousel--css-skin-day .carousel__button--next .carousel__chevron {
+                    /*margin-left: 4px;*/
+                }
+
+                .carousel--css-skin-day .carousel__button:not(.carousel__button--disabled):hover .carousel__chevron {
+                    /*stroke: #EBD7B2;*/
+                }
+
+                .carousel--css-skin-day .carousel__pagination {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: auto; /* конфликт со стилями свайпера */
+                    /* На случай типа fraction: */
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: currentColor;
+                    text-align: center;
+                }
+                    .carousel--css-skin-day .carousel__bullet {
+                        flex-shrink: 0;
+                        width: 28px;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                    }
+                        .carousel--css-skin-day .carousel__bullet::after {
+                            content: "";
+                            display: block;
+                            width: 14px;
+                            height: 14px;
+                            border-radius: 50%;
+                            background-color: transparent;
+                            border: 1px solid #303F64;
+                        }
+
+                        .carousel--css-skin-day .carousel__bullet--current::after {
+                            background-color: #303F64;
+                        }
+}
 
 

@@ -208,14 +208,26 @@
                     nextEl: $carousel.querySelector('.carousel__button--next'),
                     disabledClass: 'carousel__button--disabled',
                 },
-                // pagination: {
-                //     el: $carousel.querySelector('.carousel__pagination'),
-                //     type: "fraction", /* можно переделать на bullets, но когда добавлено много слайдов с проектами, они не влезают */
-                //     bulletClass: 'carousel__bullet',
-                //     bulletActiveClass: 'carousel__bullet--current',
-                //     clickable: true
-                // }
-
+                pagination: {
+                    el: $carousel.querySelector('.carousel__pagination'),
+                    type: "bullets", /* можно переделать на fraction, если будет много слайдов */
+                    bulletClass: 'carousel__bullet',
+                    bulletActiveClass: 'carousel__bullet--current',
+                    clickable: true
+                },
+                breakpoints: {
+                    740: {
+                        pagination: false
+                    }
+                },
+                // on: {
+                //     init: function () {
+                //         toggleNavigationAndPagination(this);
+                //     },
+                //     resize: function () {
+                //         toggleNavigationAndPagination(this);
+                //     },
+                // },
             });
         }
     });
