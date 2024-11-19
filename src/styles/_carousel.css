@@ -250,7 +250,7 @@
 
             }
                 .carousel--css-skin-dates .swiper-wrapper {
-
+                    padding-bottom: 1px; /* был странный визуальный баг, когда обрезалась половинка бордюра */
                 }
 
 
