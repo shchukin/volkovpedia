@@ -1,0 +1,126 @@
+.repertoire {
+
+}
+    .repertoire__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .repertoire__switch {
+        margin-top: 32px;
+    }
+
+    .repertoire__preview {
+        margin-top: 24px;
+    }
+        .repertoire__image {
+            width: 100%;
+            height: 446px;
+            object-fit: cover;
+            vertical-align: top;
+            background-color: var(--image-fallback);
+            border-radius: 16px;
+        }
+
+    .repertoire__description {
+        margin-top: 40px;
+        max-width: 800px;
+    }
+
+    .repertoire__filter {
+        margin-top: 60px;
+    }
+
+    .repertoire__body {
+        margin-top: 30px;
+    }
+        .repertoire__season {
+            margin-top: 80px;
+        }
+
+        .repertoire__season:first-child {
+            margin-top: 0;
+        }
+            .repertoire__sub-heading {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-family: var(--font-heading);
+                font-weight: 500;
+                font-style: italic;
+                font-size: 28px;
+                line-height: 33px;
+                color: #303F64;
+                text-transform: uppercase;
+            }
+
+            .repertoire__content {
+                margin-top: 16px;
+                max-width: 800px;
+            }
+
+
+
+@media (1700px <= width) {
+
+    .repertoire {
+
+    }
+        .repertoire__heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+            /*text-align: center;*/
+        }
+
+        .repertoire__switch {
+            /*margin-top: 32px;*/
+        }
+
+        .repertoire__preview {
+            margin-top: 40px;
+        }
+            .repertoire__image {
+                /*width: 100%;*/
+                height: 700px;
+                /*object-fit: cover;*/
+                /*vertical-align: top;*/
+                /*background-color: var(--image-fallback);*/
+                border-radius: 20px;
+            }
+
+        .repertoire__description {
+            /*margin-top: 40px;*/
+            max-width: 1148px;
+        }
+
+        .repertoire__filter {
+            margin-top: 80px;
+        }
+
+        .repertoire__body {
+            margin-top: 40px;
+        }
+            .repertoire__season {
+                margin-top: 100px;
+            }
+
+            .repertoire__season:first-child {
+                /*margin-top: 0;*/
+            }
+                .repertoire__sub-heading {
+                    /*margin-top: 0;*/
+                    /*margin-bottom: 0;*/
+                    /*font-family: var(--font-heading);*/
+                    /*font-weight: 500;*/
+                    /*font-style: italic;*/
+                    font-size: 32px;
+                    line-height: 37px;
+                    /*color: #303F64;*/
+                    /*text-transform: uppercase;*/
+                }
+
+                .repertoire__content {
+                    margin-top: 21px;
+                    max-width: 1148px;
+                }
+}
