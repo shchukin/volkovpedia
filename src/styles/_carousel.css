@@ -2,38 +2,6 @@
 
 }
 
-/* Довольно запарно выключать слайдер на десктопах скриптом.
-   Проще перебить пару стилей:
- */
-.carousel--css-disable-on-desktop {
-
-}
-
-@media (740px <= width) {
-
-    .carousel--css-disable-on-desktop {
-
-    }
-        .carousel--css-disable-on-desktop .carousel__widget .swiper {
-            overflow: visible;
-        }
-            .carousel--css-disable-on-desktop .carousel__widget .swiper-wrapper {
-                height: auto !important;
-                transform: none !important;
-            }
-                .carousel--css-disable-on-desktop .swiper-slide {
-                    width: auto !important;
-                    margin: 0 !important;
-                }
-
-        .carousel--css-disable-on-desktop .carousel__pagination {
-            display: none;
-        }
-}
-
-
-
-/* Default arrows */
 
 .carousel--css-skin-day {
     position: relative;
@@ -114,7 +82,6 @@
 @media (1700px <= width) {
 
     .carousel--css-skin-day {
-        /*position: relative;*/
         padding: 50px 94px 60px;
     }
         .carousel--css-skin-day .carousel__widget {
@@ -132,31 +99,16 @@
 
         }
             .carousel--css-skin-day .carousel__button {
-                /*position: absolute;*/
                 top: 222px;
-                /*width: 70px;*/
-                /*height: 70px;*/
-                /*padding: 0;*/
-                /*border: none;*/
-                /*display: flex;*/
-                /*align-items: center;*/
-                /*justify-content: center;*/
-                /*background-color: transparent;*/
-                /*border-radius: 50%;*/
-                /*cursor: pointer;*/
-                /*transition: background-color var(--transition-hover);*/
             }
 
             .carousel--css-skin-day .carousel__button:hover {
-                /*background-color: #303F64;*/
+
             }
 
             .carousel--css-skin-day .carousel__button--disabled,
             .carousel--css-skin-day .carousel__button--disabled:hover {
-                /*background-color: transparent;*/
-                /*opacity: 50%;*/
-                /*cursor: default;*/
-                /*transition: none;*/
+
             }
 
             .carousel--css-skin-day .carousel__button--prev {
@@ -167,21 +119,19 @@
                 right: 12px;
             }
                 .carousel--css-skin-day .carousel__chevron {
-                    /*vertical-align: top;*/
-                    /*stroke: #303F64;*/
-                    /*transition: stroke var(--transition-hover);*/
+
                 }
 
                 .carousel--css-skin-day .carousel__button--prev .carousel__chevron {
-                    /*margin-right: 4px;*/
+
                 }
 
                 .carousel--css-skin-day .carousel__button--next .carousel__chevron {
-                    /*margin-left: 4px;*/
+
                 }
 
                 .carousel--css-skin-day .carousel__button:not(.carousel__button--disabled):hover .carousel__chevron {
-                    /*stroke: #EBD7B2;*/
+
                 }
 }
 
@@ -190,7 +140,6 @@
 @media (width < 740px) {
 
     .carousel--css-skin-day {
-        /*position: relative;*/
         padding: 24px 24px 0;
     }
         .carousel--css-skin-day .carousel__widget {
@@ -212,18 +161,8 @@
             .carousel--css-skin-day .carousel__button {
                 flex-shrink: 0;
                 position: static;
-                /*top: 164px;*/
                 width: 40px;
                 height: 60px;
-                /*padding: 0;*/
-                /*border: none;*/
-                /*display: flex;*/
-                /*align-items: center;*/
-                /*justify-content: center;*/
-                /*background-color: transparent;*/
-                /*border-radius: 50%;*/
-                /*cursor: pointer;*/
-                /*transition: background-color var(--transition-hover);*/
             }
 
             .carousel--css-skin-day .carousel__button:hover {
@@ -232,25 +171,18 @@
 
             .carousel--css-skin-day .carousel__button--disabled,
             .carousel--css-skin-day .carousel__button--disabled:hover {
-                /*background-color: transparent;*/
-                /*opacity: 50%;*/
-                /*cursor: default;*/
-                /*transition: none;*/
+
             }
 
             .carousel--css-skin-day .carousel__button--prev {
-                /*left: 14px;*/
+
             }
 
             .carousel--css-skin-day .carousel__button--next {
-                /*right: 14px;*/
+
             }
                 .carousel--css-skin-day .carousel__chevron {
-                    /*vertical-align: top;*/
                     width: 11px;
-                    /*height: auto;*/
-                    /*stroke: #303F64;*/
-                    /*transition: stroke var(--transition-hover);*/
                 }
 
                 .carousel--css-skin-day .carousel__button--prev .carousel__chevron {
@@ -377,6 +309,8 @@
             }
 }
 
+
+/* Здесь уже включится masonry */
 @media (740px <= width) {
 
     .carousel--css-skin-dates {
@@ -392,41 +326,34 @@
 
                 }
                     .carousel--css-skin-dates .swiper-slide {
-                        width: 342px;
+                        width: 284px !important;
+                        height: auto !important;
+                        margin-bottom: 16px;
                     }
 
 
         .carousel--css-skin-dates .carousel__controls {
+            display: none;
+        }
+}
+
+
+@media (1700px <= width) {
+
+    .carousel--css-skin-dates {
+
+    }
+        .carousel--css-skin-dates .carousel__widget {
 
         }
-            .carousel--css-skin-dates .carousel__button {
+            .carousel--css-skin-dates .swiper {
 
             }
-
-            .carousel--css-skin-dates .carousel__button--disabled {
-
-            }
-
-            .carousel--css-skin-dates .carousel__button--prev {
-
-            }
-
-            .carousel--css-skin-dates .carousel__button--next {
-
-            }
-                .carousel--css-skin-dates .carousel__chevron {
+                .carousel--css-skin-dates .swiper-wrapper {
 
                 }
-
-                .carousel--css-skin-dates .carousel__button--prev .carousel__chevron {
-
-                }
-
-                .carousel--css-skin-dates .carousel__button--next .carousel__chevron {
-
-                }
-
-            .carousel--css-skin-dates .carousel__pagination {
-
-            }
+                    .carousel--css-skin-dates .swiper-slide {
+                        width: 342px !important;
+                        margin-bottom: 24px;
+                    }
 }
