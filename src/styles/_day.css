@@ -9,6 +9,7 @@
         font-style: italic;
         font-size: 44px;
         line-height: 51px;
+        color: #303F64;
         text-align: center;
         text-transform: uppercase;
     }
@@ -131,7 +132,7 @@
         }
 
         .day__body {
-            margin-top: 26px;
+            margin-top: 22px;
             display: block;
             /*grid-template-columns: 500px 680px;*/
             border-width: 1px;
