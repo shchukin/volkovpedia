@@ -218,8 +218,34 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
             } else {
-                new Masonry(document.querySelector('.carousel--js-init-dates .swiper-wrapper'), {
-                    gutter: 16
+                /* Masonry обязательно нужно инициализировать после прогрузки шрифтов и картинок, поскольку они влияют на координаты: */
+                window.onload = function () {
+                    new Masonry(document.querySelector('.carousel--js-init-dates .swiper-wrapper'), {
+                        gutter: 16
+                    });
+                };
+            }
+        }
+
+        if( $carousel.classList.contains('carousel--js-init-gallery') ) {
+            if(!isDesktop) {
+                new Swiper($carousel.querySelector('.swiper'), {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+                    autoHeight: true,
+                    spaceBetween: 24,
+                    navigation: {
+                        prevEl: $carousel.querySelector('.carousel__button--prev'),
+                        nextEl: $carousel.querySelector('.carousel__button--next'),
+                        disabledClass: 'carousel__button--disabled',
+                    },
+                    pagination: {
+                        el: $carousel.querySelector('.carousel__pagination'),
+                        type: "fraction", /* можно переделать на fraction, если будет много слайдов */
+                        bulletClass: 'carousel__bullet',
+                        bulletActiveClass: 'carousel__bullet--current',
+                        clickable: true
+                    }
                 });
             }
         }
