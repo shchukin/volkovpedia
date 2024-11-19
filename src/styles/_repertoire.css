@@ -38,12 +38,6 @@
         background-color: #F9F0E5;
     }
 
-    .repertoire__filter:has(.abc) {
-        margin-top: 24px;
-        padding-top: 20px;
-        padding-bottom: 0;
-    }
-
     .repertoire__body {
         margin-top: 14px;
     }
@@ -126,12 +120,6 @@
             /*background-color: #F9F0E5;*/
         }
 
-        .repertoire__filter:has(.abc) {
-            /*margin-top: 24px;*/
-            /*padding-top: 20px;*/
-            /*padding-bottom: 0;*/
-        }
-
         .repertoire__body {
             margin-top: 24px;
         }
@@ -209,12 +197,6 @@
 
         .repertoire__filter {
             margin-top: 50px;
-        }
-
-        .repertoire__filter:has(.abc) {
-            /*margin-top: 24px;*/
-            padding-top: 27px;
-            /*padding-bottom: 0;*/
         }
 
         .repertoire__body {

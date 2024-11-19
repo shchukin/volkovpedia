@@ -1,8 +1,16 @@
 .abc {
     position: relative;
-    border-bottom: 1px solid #6073A2;
-    margin-top: -20px;
+    /*margin-top: -20px;*/
 }
+    .abc::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -17px;
+        height: 1px;
+        background-color: #6073A2;
+    }
     .abc__scroll {
 
     }
@@ -17,8 +25,8 @@
                 flex-basis: 0;
                 background-color: transparent;
                 border: none;
-                padding-top: 21px;
-                padding-bottom: 21px;
+                padding-top: 5px;
+                padding-bottom: 5px;
                 border-radius: 2px;
                 font-family: var(--font-heading);
                 font-weight: 600;
@@ -55,11 +63,7 @@
 @media (1700px <= width) {
 
     .abc {
-        /*position: relative;*/
-        /*display: flex;*/
-        /*margin-left: -5px;*/
-        /*margin-right: -5px;*/
-        margin-top: -21px;
+        /*margin-top: -21px;*/
     }
         .abc__scroll {
 
@@ -73,8 +77,8 @@
                     /*flex-basis: 0;*/
                     /*background-color: transparent;*/
                     /*border: none;*/
-                    padding-top: 24px;
-                    padding-bottom: 24px;
+                    padding-top: 7px;
+                    padding-bottom: 7px;
                     /*border-radius: 2px;*/
                     /*font-family: var(--font-heading);*/
                     /*font-weight: 600;*/
@@ -111,11 +115,7 @@
 @media (width < 740px) {
 
     .abc {
-        /*position: relative;*/
-        /*display: flex;*/
-        /*margin-left: -5px;*/
-        /*margin-right: -5px;*/
-        margin-top: -27px;
+        /*margin-top: -27px;*/
     }
         .abc__scroll {
             overflow-x: auto;
@@ -133,7 +133,7 @@
                     flex-shrink: 0;
                     /*background-color: transparent;*/
                     /*border: none;*/
-                    padding: 18px 8px;
+                    padding: 2px 8px;
                     /*border-radius: 2px;*/
                     /*font-family: var(--font-heading);*/
                     /*font-weight: 600;*/
