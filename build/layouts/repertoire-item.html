@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Спектакли по сезонам</title>
+
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+        <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#FFFFFF">
+
+        <!-- manifest -->
+        <link rel="manifest" href="../manifest.json">
+        <meta name="theme-color" content="#FFFFFF">
+        <meta name="msapplication-config" content="../browserconfig.xml">
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+
+        <!-- assets -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/styles.css?1732022341">
+
+    </head>
+    <body>
+
+        <!--[if IE]>
+            <div class="browser">
+                Вы используете устаревший браузер. Для корректной работы этого сайта и большинства других вам необходимо перейти на современный&nbsp;браузер.
+            </div>
+        <![endif]-->
+
+
+        <div class="page">
+            <header class="header">
+                <div class="header__detachable-part">
+                    <div class="header__wrap container">
+                        <div class="header__primary">
+                            <a class="header__logo" href="#">
+                                Театр Волкова — первый русский
+                            </a>
+                            <div class="header__search">
+                                <div class="find">
+                                    <button class="find__handler" type="button">
+                                        <svg class="find__handler-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                            <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5Zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14Z"/>
+                                        </svg>
+                                        <svg class="find__handler-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#F8F0E5"/>
+                                        </svg>
+                                    </button>
+                                    <form class="find__form">
+                                        <input class="find__field" type="text" placeholder="Поиск">
+                                        <button class="find__submit" type="button">
+                                            <svg class="find__submit-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5Zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14Z"/>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="header__burger">
+                                <button class="burger" type="button">
+                                    <svg class="burger__desktop-icon" width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.5 21H24.5V18.6667H3.5V21ZM3.5 15.1667H24.5V12.8333H3.5V15.1667ZM3.5 7V9.33333H24.5V7H3.5Z"/>
+                                    </svg>
+                                    <span class="burger__label">
+                                        Содержание
+                                    </span>
+                                    <svg class="burger__desktop-close" width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 8.41L19.59 7L14 12.59L8.41 7L7 8.41L12.59 14L7 19.59L8.41 21L14 15.41L19.59 21L21 19.59L15.41 14L21 8.41Z"/>
+                                    </svg>
+                                    <svg class="burger__smartphone-icon" width="46" height="23" viewBox="0 0 46 23" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="46" height="4.6"/>
+                                        <rect x="0" y="9.19989" width="46" height="4.6"/>
+                                        <rect x="11.8281" y="18.3999" width="34.1714" height="4.6"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="header__navigation hide-scrollbar">
+                            <a class="header__link" href="#">Театр сегодня</a>
+                            <a class="header__link" href="#">История театра</a>
+                            <a class="header__link" href="#">Летопись театра</a>
+                            <a class="header__link" href="#">Спектакли</a>
+                            <a class="header__link" href="#">Персоналии</a>
+                            <a class="header__link header__link--current" href="#">Книги по истории театра</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="content container">
+                <div class="content__breadcrumbs">
+                    <nav class="breadcrumbs">
+                        <div class="breadcrumbs__scroll hide-scrollbar">
+                            <div class="breadcrumbs__ribbon">
+                                <div class="breadcrumbs__item">
+                                    <a class="breadcrumbs__link" href="#">Главная</a>
+                                </div>
+                                <div class="breadcrumbs__item">
+                                    <a class="breadcrumbs__link" href="#">Волковская энциклопедия</a>
+                                </div>
+                                <div class="breadcrumbs__item">
+                                    <a class="breadcrumbs__link" href="#">Спектакли</a>
+                                </div>
+                                <div class="breadcrumbs__item">
+                                    <a class="breadcrumbs__link" href="#">Спектакли по сезонам</a>
+                                </div>
+                                <div class="breadcrumbs__item">
+                                    <div class="breadcrumbs__title">А все таки она вертится?...</div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="content__unique-part">
+                    <div class="spectacle">
+                        <section class="spectacle__section">
+                            <div class="spectacle__widget">
+                                <div class="about__head">
+                                    <div class="about__director">
+                                        Григорий Горин
+                                    </div>
+                                    <h1 class="about__heading">
+                                        А всё-таки она вертится?...
+                                    </h1>
+                                    <div class="about__summary">
+                                        <div class="about__tag">
+                                            Театральная фантазия
+                                        </div>
+                                        <div class="about__tag">
+                                            Режиссёр: Владимир Воронцов
+                                        </div>
+                                    </div>
+                                    <!-- about__preview можно делать ссылкой -->
+                                    <div class="about__preview">
+                                        <img class="about__image"
+                                             srcset="../temp/spectacle/spectacle-a@2x.jpg 2x"
+                                             src="../temp/spectacle/spectacle-a@1x.jpg"
+                                             width="1440"
+                                             height="677"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="about__body">
+                                    <div class="about__content wysiwyg wysiwyg--larger">
+                                        <p>Спектакль по пьесе одного из создателей киножурнала "Ералаш" Александра Хмелика "А всё-таки она вертится?... или Гуманоид в небе мчится".</p>
+                                        <p>Восьмиклассник Василий Лопотухин опаздывает на контрольную по математике и в оправдание говорит учительнице, что по дороге в школу ему встретилась летающая тарелка, полная гуманоидов. Он, естественно, пообщался с пришельцами, поэтому и опоздал на урок. Учительница Алла Константиновна мчится к директору жаловаться на негодяя Лопотухина, который, мол, издевается лично над ней и её жизненной драмой. Дело в том, что муж Аллы Константиновны занимался вопросами НЛО, а потом загадочным образом исчез, обставив своё исчезновение как похищение инопланетянами. Учительница была уверена, что Лопотухин знал об этом и теперь намекает на эти обстоятельства. В дело вмешивается директор школы. Комитет комсомола создаёт комиссию по расследованию сообщения Василия Лопотухина. Находится и важный свидетель приземления НЛО – сантехник дядя Коля, сосед Лопотухина. Он почти дословно подтверждает всё то, что рассказывал Василий о летающей тарелке и гуманоидах.  И если балаболу Ваське Лопотухину ещё можно не поверить, то к свидетельству дяди Коли члены комиссии относятся очень серьёзно.  В школе начинается что-то невообразимое: все ученики словно сходят с ума на почве НЛО...</p>
+                                        <p>Два года спустя после премьеры в Волковском на экраны вышел фильм "Если верить Лопотухину...", снятый по этой пьесе.</p>
+                                    </div>
+                                    <div class="about__sidebar">
+                                        <div class="about__param">
+                                            <b class="about__param-heading">Премьера</b>
+                                            <div class="about__param-value">18 ноября 2023 г.</div>
+                                        </div>
+                                        <div class="about__param">
+                                            <b class="about__param-heading">Продолжительность</b>
+                                            <div class="about__param-value">2 часа 45 минут <span class="about__note">с&nbsp;антрактом</span></div>
+                                        </div>
+                                        <div class="about__param">
+                                            <b class="about__param-heading">Сцена</b>
+                                            <div class="about__param-value">Основная сцена</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="spectacle__section">
+                            <h2 class="spectacle__section-heading title title--secondary">
+                                Фотогалерея
+                            </h2>
+                            <div class="spectacle__widget">
+                                <div class="
+                                    carousel
+                                    carousel--js-init-gallery
+                                    carousel--css-skin-photo-gallery
+                                    carousel--css-default-pagination-fraction
+                                    carousel--css-default-arrows-on-smartphone
+                                ">
+                                    <div class="carousel__widget">
+                                        <div class="swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <a class="thumbnail" href="#">
+                                                        <img class="thumbnail__image"
+                                                             srcset="../temp/thumbnails/thumbnail-a@2x.jpg 1.5x"
+                                                             src="../temp/thumbnails/thumbnail-a@1x.jpg"
+                                                             width="382"
+                                                             height="287"
+                                                             alt=""
+                                                        >
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a class="thumbnail" href="#">
+                                                        <img class="thumbnail__image"
+                                                             srcset="../temp/thumbnails/thumbnail-b@2x.jpg 1.5x"
+                                                             src="../temp/thumbnails/thumbnail-b@1x.jpg"
+                                                             width="382"
+                                                             height="287"
+                                                             alt=""
+                                                        >
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a class="thumbnail" href="#">
+                                                        <img class="thumbnail__image"
+                                                             srcset="../temp/thumbnails/thumbnail-c@2x.jpg 1.5x"
+                                                             src="../temp/thumbnails/thumbnail-c@1x.jpg"
+                                                             width="382"
+                                                             height="287"
+                                                             alt=""
+                                                        >
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a class="thumbnail" href="#">
+                                                        <img class="thumbnail__image"
+                                                             srcset="../temp/thumbnails/thumbnail-d@2x.jpg 1.5x"
+                                                             src="../temp/thumbnails/thumbnail-d@1x.jpg"
+                                                             width="382"
+                                                             height="287"
+                                                             alt=""
+                                                        >
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a class="thumbnail" href="#">
+                                                        <img class="thumbnail__image"
+                                                             srcset="../temp/thumbnails/thumbnail-e@2x.jpg 1.5x"
+                                                             src="../temp/thumbnails/thumbnail-e@1x.jpg"
+                                                             width="382"
+                                                             height="287"
+                                                             alt=""
+                                                        >
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a class="thumbnail" href="#">
+                                                        <img class="thumbnail__image"
+                                                             srcset="../temp/thumbnails/thumbnail-f@2x.jpg 1.5x"
+                                                             src="../temp/thumbnails/thumbnail-f@1x.jpg"
+                                                             width="382"
+                                                             height="287"
+                                                             alt=""
+                                                        >
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a class="thumbnail" href="#">
+                                                        <img class="thumbnail__image"
+                                                             srcset="../temp/thumbnails/thumbnail-g@2x.jpg 1.5x"
+                                                             src="../temp/thumbnails/thumbnail-g@1x.jpg"
+                                                             width="382"
+                                                             height="287"
+                                                             alt=""
+                                                        >
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a class="thumbnail" href="#">
+                                                        <img class="thumbnail__image"
+                                                             srcset="../temp/thumbnails/thumbnail-h@2x.jpg 1.5x"
+                                                             src="../temp/thumbnails/thumbnail-h@1x.jpg"
+                                                             width="382"
+                                                             height="287"
+                                                             alt=""
+                                                        >
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel__controls">
+                                        <button class="carousel__button carousel__button--prev" type="button">
+                                            Назад
+                                        </button>
+                                        <div class="carousel__pagination">
+
+                                        </div>
+                                        <button class="carousel__button carousel__button--next" type="button">
+                                            Вперёд
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="spectacle__section">
+                            <h2 class="spectacle__section-heading title title--secondary">
+                                Видео
+                            </h2>
+                            <div class="spectacle__widget">
+                                <div class="
+                                    carousel
+                                    carousel--js-init-gallery
+                                    carousel--css-skin-video-gallery
+                                    carousel--css-default-pagination-fraction
+                                    carousel--css-default-arrows-on-smartphone
+                                ">
+                                    <div class="carousel__widget">
+                                        <div class="swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="video-preview">
+                                                        <div class="video-preview__viewport">
+                                                            <a class="thumbnail" href="#">
+                                                                <img class="thumbnail__image"
+                                                                     srcset="../temp/video-thumbnails/video-thumbnail-a@2x.jpg 1.5x"
+                                                                     src="../temp/video-thumbnails/video-thumbnail-a@1x.jpg"
+                                                                     width="571"
+                                                                     height="321"
+                                                                     alt=""
+                                                                >
+                                                                <div class="thumbnail__play">
+                                                                    <svg class="thumbnail__icon" width="93" height="93" viewBox="0 0 93 93" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M37.2 67.425V25.575L65.0999 46.5L37.2 67.425Z"/>
+                                                                    </svg>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="video-preview__name">
+                                                            <a class="link link--inverted-text-alike" href="#">Забыть Герострата!</a>
+                                                        </div>
+                                                        <div class="video-preview__description">
+                                                            Герострат бросает вызов времени и обществу, стремясь к бессмертию любой ценой. Спектакль о последствиях и безумию ради славы.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="video-preview">
+                                                        <div class="video-preview__viewport">
+                                                            <a class="thumbnail" href="#">
+                                                                <img class="thumbnail__image"
+                                                                     srcset="../temp/video-thumbnails/video-thumbnail-b@2x.jpg 1.5x"
+                                                                     src="../temp/video-thumbnails/video-thumbnail-b@1x.jpg"
+                                                                     width="571"
+                                                                     height="321"
+                                                                     alt=""
+                                                                >
+                                                                <div class="thumbnail__play">
+                                                                    <svg class="thumbnail__icon" width="93" height="93" viewBox="0 0 93 93" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M37.2 67.425V25.575L65.0999 46.5L37.2 67.425Z"/>
+                                                                    </svg>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="video-preview__name">
+                                                            <a class="link link--inverted-text-alike" href="#">Герострат и Вечная Память</a>
+                                                        </div>
+                                                        <div class="video-preview__description">
+                                                            Погрузитесь в историю, где героем становится тот, кто готов разрушить всё ради памяти о себе. Какое место отведено забвению?
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="video-preview">
+                                                        <div class="video-preview__viewport">
+                                                            <a class="thumbnail" href="#">
+                                                                <img class="thumbnail__image"
+                                                                     srcset="../temp/video-thumbnails/video-thumbnail-c@2x.jpg 1.5x"
+                                                                     src="../temp/video-thumbnails/video-thumbnail-c@1x.jpg"
+                                                                     width="571"
+                                                                     height="321"
+                                                                     alt=""
+                                                                >
+                                                                <div class="thumbnail__play">
+                                                                    <svg class="thumbnail__icon" width="93" height="93" viewBox="0 0 93 93" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M37.2 67.425V25.575L65.0999 46.5L37.2 67.425Z"/>
+                                                                    </svg>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="video-preview__name">
+                                                            <a class="link link--inverted-text-alike" href="#">Герострат: История Саморазрушения!</a>
+                                                        </div>
+                                                        <div class="video-preview__description">
+                                                            Узнайте, как жажда власти и бессмертной славы приводит к трагедии в этом мощном спектакле, раскрывающем темные стороны человеческой природы.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel__controls">
+                                        <button class="carousel__button carousel__button--prev" type="button">
+                                            Назад
+                                        </button>
+                                        <div class="carousel__pagination">
+
+                                        </div>
+                                        <button class="carousel__button carousel__button--next" type="button">
+                                            Вперёд
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="spectacle__section">
+                            <h2 class="spectacle__section-heading title title--secondary">
+                                Актеры
+                            </h2>
+                            <div class="spectacle__widget">
+                                <div class="group">
+                                    <div class="actor-thumb">
+                                        <a class="actor-thumb__preview" href="#">
+                                            <img class="actor-thumb__image"
+                                                 srcset="../temp/actor-thumbs/actor-thumb-g@2x.jpg"
+                                                 src="../temp/actor-thumbs/actor-thumb-g@1x.jpg"
+                                                 width="273"
+                                                 height="273"
+                                                 alt=""
+                                            >
+                                        </a>
+                                        <h2 class="actor-thumb__heading">
+                                            <a class="actor-thumb__link" href="#">Герман Владимирович Громов</a>
+                                        </h2>
+                                        <div class="actor-thumb__post">
+                                            Директор театра
+                                        </div>
+                                    </div>
+                                    <div class="actor-thumb">
+                                        <a class="actor-thumb__preview" href="#">
+                                            <img class="actor-thumb__image"
+                                                 srcset="../temp/actor-thumbs/actor-thumb-h@2x.jpg"
+                                                 src="../temp/actor-thumbs/actor-thumb-h@1x.jpg"
+                                                 width="273"
+                                                 height="273"
+                                                 alt=""
+                                            >
+                                        </a>
+                                        <h2 class="actor-thumb__heading">
+                                            <a class="actor-thumb__link" href="#">Валерий Юрьевич Кириллов</a>
+                                        </h2>
+                                        <div class="actor-thumb__post">
+                                            Художественный руководитель театра
+                                        </div>
+                                    </div>
+                                    <div class="actor-thumb">
+                                        <a class="actor-thumb__preview" href="#">
+                                            <img class="actor-thumb__image"
+                                                 srcset="../temp/actor-thumbs/actor-thumb-i@2x.jpg"
+                                                 src="../temp/actor-thumbs/actor-thumb-i@1x.jpg"
+                                                 width="273"
+                                                 height="273"
+                                                 alt=""
+                                            >
+                                        </a>
+                                        <h2 class="actor-thumb__heading">
+                                            <a class="actor-thumb__link" href="#">Александр Сергеевич Созонов</a>
+                                        </h2>
+                                        <div class="actor-thumb__post">
+                                            Главный режиссер театра
+                                        </div>
+                                    </div>
+                                    <div class="actor-thumb">
+                                        <a class="actor-thumb__preview" href="#">
+                                            <img class="actor-thumb__image"
+                                                 srcset="../temp/actor-thumbs/actor-thumb-j@2x.jpg"
+                                                 src="../temp/actor-thumbs/actor-thumb-j@1x.jpg"
+                                                 width="273"
+                                                 height="273"
+                                                 alt=""
+                                            >
+                                        </a>
+                                        <h2 class="actor-thumb__heading">
+                                            <a class="actor-thumb__link" href="#">Юлия Михайловна Серова</a>
+                                        </h2>
+                                        <div class="actor-thumb__post">
+                                            Заместитель директора по финансам — главный бухгалтер
+                                        </div>
+                                    </div>
+                                    <div class="actor-thumb">
+                                        <a class="actor-thumb__preview" href="#">
+                                            <img class="actor-thumb__image"
+                                                 srcset="../temp/actor-thumbs/actor-thumb-j@2x.jpg"
+                                                 src="../temp/actor-thumbs/actor-thumb-j@1x.jpg"
+                                                 width="273"
+                                                 height="273"
+                                                 alt=""
+                                            >
+                                        </a>
+                                        <h2 class="actor-thumb__heading">
+                                            <a class="actor-thumb__link" href="#">Юлия Михайловна Серова</a>
+                                        </h2>
+                                        <div class="actor-thumb__post">
+                                            Заместитель директора по финансам — главный бухгалтер
+                                        </div>
+                                    </div>
+                                    <div class="actor-thumb">
+                                        <a class="actor-thumb__preview" href="#">
+                                            <img class="actor-thumb__image"
+                                                 srcset="../temp/actor-thumbs/actor-thumb-j@2x.jpg"
+                                                 src="../temp/actor-thumbs/actor-thumb-j@1x.jpg"
+                                                 width="273"
+                                                 height="273"
+                                                 alt=""
+                                            >
+                                        </a>
+                                        <h2 class="actor-thumb__heading">
+                                            <a class="actor-thumb__link" href="#">Юлия Михайловна Серова</a>
+                                        </h2>
+                                        <div class="actor-thumb__post">
+                                            Заместитель директора по финансам — главный бухгалтер
+                                        </div>
+                                    </div>
+                                    <div class="actor-thumb">
+                                        <a class="actor-thumb__preview" href="#">
+                                            <img class="actor-thumb__image"
+                                                 srcset="../temp/actor-thumbs/actor-thumb-k@2x.jpg"
+                                                 src="../temp/actor-thumbs/actor-thumb-k@1x.jpg"
+                                                 width="273"
+                                                 height="273"
+                                                 alt=""
+                                            >
+                                        </a>
+                                        <h2 class="actor-thumb__heading">
+                                            <a class="actor-thumb__link" href="#">Александр Борисович Хатюхин</a>
+                                        </h2>
+                                        <div class="actor-thumb__post">
+                                            Заместитель директора по правовым вопросам
+                                        </div>
+                                    </div>
+                                    <div class="actor-thumb">
+                                        <a class="actor-thumb__preview" href="#">
+                                            <img class="actor-thumb__image"
+                                                 srcset="../temp/actor-thumbs/actor-thumb-l@2x.jpg"
+                                                 src="../temp/actor-thumbs/actor-thumb-l@1x.jpg"
+                                                 width="273"
+                                                 height="273"
+                                                 alt=""
+                                            >
+                                        </a>
+                                        <h2 class="actor-thumb__heading">
+                                            <a class="actor-thumb__link" href="#">Надежда Николаевна Кумзёрова</a>
+                                        </h2>
+                                        <div class="actor-thumb__post">
+                                            Заместитель директора по работе со зрителем
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="spectacle__section">
+                            <h2 class="spectacle__section-heading title title--secondary">
+                                Авторы и создатели
+                            </h2>
+                            <div class="spectacle__widget">
+                                <div class="group">
+                                    <div class="actor-thumb">
+                                        <a class="actor-thumb__preview" href="#">
+                                            <img class="actor-thumb__image"
+                                                 srcset="../temp/actor-thumbs/actor-thumb-g@2x.jpg"
+                                                 src="../temp/actor-thumbs/actor-thumb-g@1x.jpg"
+                                                 width="273"
+                                                 height="273"
+                                                 alt=""
+                                            >
+                                        </a>
+                                        <h2 class="actor-thumb__heading">
+                                            <a class="actor-thumb__link" href="#">Герман Владимирович Громов</a>
+                                        </h2>
+                                        <div class="actor-thumb__post">
+                                            Директор театра
+                                        </div>
+                                    </div>
+                                    <div class="actor-thumb">
+                                        <a class="actor-thumb__preview" href="#">
+                                            <img class="actor-thumb__image"
+                                                 srcset="../temp/actor-thumbs/actor-thumb-h@2x.jpg"
+                                                 src="../temp/actor-thumbs/actor-thumb-h@1x.jpg"
+                                                 width="273"
+                                                 height="273"
+                                                 alt=""
+                                            >
+                                        </a>
+                                        <h2 class="actor-thumb__heading">
+                                            <a class="actor-thumb__link" href="#">Валерий Юрьевич Кириллов</a>
+                                        </h2>
+                                        <div class="actor-thumb__post">
+                                            Художественный руководитель театра
+                                        </div>
+                                    </div>
+                                    <div class="actor-thumb">
+                                        <a class="actor-thumb__preview" href="#">
+                                            <img class="actor-thumb__image"
+                                                 srcset="../temp/actor-thumbs/actor-thumb-i@2x.jpg"
+                                                 src="../temp/actor-thumbs/actor-thumb-i@1x.jpg"
+                                                 width="273"
+                                                 height="273"
+                                                 alt=""
+                                            >
+                                        </a>
+                                        <h2 class="actor-thumb__heading">
+                                            <a class="actor-thumb__link" href="#">Александр Сергеевич Созонов</a>
+                                        </h2>
+                                        <div class="actor-thumb__post">
+                                            Главный режиссер театра
+                                        </div>
+                                    </div>
+                                    <div class="actor-thumb">
+                                        <a class="actor-thumb__preview" href="#">
+                                            <img class="actor-thumb__image"
+                                                 srcset="../temp/actor-thumbs/actor-thumb-j@2x.jpg"
+                                                 src="../temp/actor-thumbs/actor-thumb-j@1x.jpg"
+                                                 width="273"
+                                                 height="273"
+                                                 alt=""
+                                            >
+                                        </a>
+                                        <h2 class="actor-thumb__heading">
+                                            <a class="actor-thumb__link" href="#">Юлия Михайловна Серова</a>
+                                        </h2>
+                                        <div class="actor-thumb__post">
+                                            Заместитель директора по финансам — главный бухгалтер
+                                        </div>
+                                    </div>
+                                    <div class="actor-thumb">
+                                        <a class="actor-thumb__preview" href="#">
+                                            <img class="actor-thumb__image"
+                                                 srcset="../temp/actor-thumbs/actor-thumb-j@2x.jpg"
+                                                 src="../temp/actor-thumbs/actor-thumb-j@1x.jpg"
+                                                 width="273"
+                                                 height="273"
+                                                 alt=""
+                                            >
+                                        </a>
+                                        <h2 class="actor-thumb__heading">
+                                            <a class="actor-thumb__link" href="#">Юлия Михайловна Серова</a>
+                                        </h2>
+                                        <div class="actor-thumb__post">
+                                            Заместитель директора по финансам — главный бухгалтер
+                                        </div>
+                                    </div>
+                                    <div class="actor-thumb">
+                                        <a class="actor-thumb__preview" href="#">
+                                            <img class="actor-thumb__image"
+                                                 srcset="../temp/actor-thumbs/actor-thumb-j@2x.jpg"
+                                                 src="../temp/actor-thumbs/actor-thumb-j@1x.jpg"
+                                                 width="273"
+                                                 height="273"
+                                                 alt=""
+                                            >
+                                        </a>
+                                        <h2 class="actor-thumb__heading">
+                                            <a class="actor-thumb__link" href="#">Юлия Михайловна Серова</a>
+                                        </h2>
+                                        <div class="actor-thumb__post">
+                                            Заместитель директора по финансам — главный бухгалтер
+                                        </div>
+                                    </div>
+                                    <div class="actor-thumb">
+                                        <a class="actor-thumb__preview" href="#">
+                                            <img class="actor-thumb__image"
+                                                 srcset="../temp/actor-thumbs/actor-thumb-k@2x.jpg"
+                                                 src="../temp/actor-thumbs/actor-thumb-k@1x.jpg"
+                                                 width="273"
+                                                 height="273"
+                                                 alt=""
+                                            >
+                                        </a>
+                                        <h2 class="actor-thumb__heading">
+                                            <a class="actor-thumb__link" href="#">Александр Борисович Хатюхин</a>
+                                        </h2>
+                                        <div class="actor-thumb__post">
+                                            Заместитель директора по правовым вопросам
+                                        </div>
+                                    </div>
+                                    <div class="actor-thumb">
+                                        <a class="actor-thumb__preview" href="#">
+                                            <img class="actor-thumb__image"
+                                                 srcset="../temp/actor-thumbs/actor-thumb-l@2x.jpg"
+                                                 src="../temp/actor-thumbs/actor-thumb-l@1x.jpg"
+                                                 width="273"
+                                                 height="273"
+                                                 alt=""
+                                            >
+                                        </a>
+                                        <h2 class="actor-thumb__heading">
+                                            <a class="actor-thumb__link" href="#">Надежда Николаевна Кумзёрова</a>
+                                        </h2>
+                                        <div class="actor-thumb__post">
+                                            Заместитель директора по работе со зрителем
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="footer__wrap container">
+                    <div class="footer__primary">
+                        <nav class="nav nav--footer">
+                            <div class="nav__half">
+                                <div class="nav__section">
+                                    <a class="nav__handler" href="#">
+                                        Театр сегодня
+                                    </a>
+                                    <div class="nav__dropdown">
+                                        <a class="nav__link" href="#">Новости</a>
+                                        <a class="nav__link" href="#">Репертуар</a>
+                                        <a class="nav__link" href="#">Труппа</a>
+                                        <a class="nav__link" href="#">О театре</a>
+                                        <a class="nav__link" href="#">Проекты и события</a>
+                                        <a class="nav__link" href="#">Визит в театр</a>
+                                        <a class="nav__link" href="#">Контакты</a>
+                                    </div>
+                                </div>
+                                <div class="nav__section">
+                                    <a class="nav__handler" href="#">
+                                        История театра
+                                    </a>
+                                </div>
+                                <div class="nav__section">
+                                    <a class="nav__handler" href="#">
+                                        Персоналии
+                                    </a>
+                                    <div class="nav__dropdown">
+                                        <a class="nav__link" href="#">Сотрудники театра — участники&nbsp;ВОВ</a>
+                                        <a class="nav__link" href="#">Художественное руководство</a>
+                                        <a class="nav__link" href="#">Режиссеры</a>
+                                        <a class="nav__link" href="#">Ведущие актеры театра</a>
+                                        <a class="nav__link" href="#">Труппа</a>
+                                        <a class="nav__link" href="#">Художники</a>
+                                        <a class="nav__link" href="#">Дирекция</a>
+                                        <a class="nav__link" href="#">С театром сотрудничали</a>
+                                        <a class="nav__link" href="#">В создании спектаклей принимали участие</a>
+                                    </div>
+                                </div>
+                                <div class="nav__section">
+                                    <a class="nav__handler" href="#">
+                                        Летопись театра
+                                    </a>
+                                </div>
+                                <div class="nav__section">
+                                    <a class="nav__handler" href="#">
+                                        Спектакли
+                                    </a>
+                                    <div class="nav__dropdown">
+                                        <a class="nav__link" href="#">Волковские сезоны</a>
+                                        <a class="nav__link" href="#">Спектакли по алфавиту</a>
+                                        <a class="nav__link" href="#">Спектакли по русской классической драматургии (по 1917)</a>
+                                        <a class="nav__link" href="#">Спектакли по советской драматургии <span class="nobr">(1920-1950 г.)</span></a>
+                                        <a class="nav__link" href="#">Спектакли по советской драматургии <span class="nobr">(1960-1980 г.)</span></a>
+                                        <a class="nav__link" href="#">Спектакли по современной отечественной драматургии</a>
+                                        <a class="nav__link" href="#">Спектакли по зарубежной драматургии</a>
+                                        <a class="nav__link" href="#">Спектакли на камерной сцене</a>
+                                        <a class="nav__link" href="#">Детские спектакли</a>
+                                    </div>
+                                </div>
+                                <div class="nav__section">
+                                    <a class="nav__handler" href="#">
+                                        Гастроли
+                                    </a>
+                                    <div class="nav__dropdown">
+                                        <a class="nav__link" href="#">Гастрольные поездки театра по России и СССР</a>
+                                        <a class="nav__link" href="#">Зарубежные гастроли театра</a>
+                                        <a class="nav__link" href="#">Участие в фестивалях</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav__half">
+                                <div class="nav__section">
+                                    <a class="nav__handler" href="#">
+                                        Наши гости
+                                    </a>
+                                    <div class="nav__dropdown">
+                                        <a class="nav__link" href="#">Театры России и мира на Волковской сцене</a>
+                                        <a class="nav__link" href="#">Мировые звезды на Волковской сцене</a>
+                                        <a class="nav__link" href="#">Участники Волковских фестивалей</a>
+                                        <a class="nav__link" href="#">Участники фестивалей БТР</a>
+                                        <a class="nav__link" href="#">Режиссерские лаборатории</a>
+                                        <a class="nav__link" href="#">Театр — центр общественной и культурной жизни</a>
+                                    </div>
+                                </div>
+                                <div class="nav__section">
+                                    <a class="nav__handler" href="#">
+                                        Книги о театре
+                                    </a>
+                                    <div class="nav__dropdown">
+                                        <a class="nav__link" href="#">Книги о Фёдоре Волкове</a>
+                                        <a class="nav__link" href="#">Книги по истории театра</a>
+                                        <a class="nav__link" href="#">Книги о режиссерах и актерах</a>
+                                        <a class="nav__link" href="#">Журнал «Театральный круг» (2009-2015)</a>
+                                    </div>
+                                </div>
+                                <div class="nav__section">
+                                    <a class="nav__handler" href="#">
+                                        СМИ о театре
+                                    </a>
+                                    <div class="nav__dropdown">
+                                        <a class="nav__link" href="#">Публикации до 1918 года</a>
+                                        <a class="nav__link" href="#">Публикации <span class="nobr">1918-1960 гг.</span></a>
+                                        <a class="nav__link" href="#">Публикации <span class="nobr">1961-1991 гг.</span></a>
+                                        <a class="nav__link" href="#">Публикации <span class="nobr">1992-2008 гг.</span></a>
+                                        <a class="nav__link" href="#">Публикации и видео <span class="nobr">2009-2024гг.</span></a>
+                                    </div>
+                                </div>
+                                <div class="nav__section">
+                                    <a class="nav__handler" href="#">
+                                        Фильмы о театре
+                                    </a>
+                                    <div class="nav__dropdown">
+                                        <a class="nav__link" href="#">Фильмы и сюжеты о театре</a>
+                                        <a class="nav__link" href="#">Фильмы и сюжеты о Сергее&nbsp;Пускепалисе</a>
+                                    </div>
+                                </div>
+                                <div class="nav__section">
+                                    <a class="nav__handler" href="#">
+                                        Видеозаписи спектаклей
+                                    </a>
+                                </div>
+                                <div class="nav__section">
+                                    <a class="nav__handler" href="#">
+                                        Актеры театра в кино
+                                    </a>
+                                    <div class="nav__dropdown">
+                                        <a class="nav__link" href="#">Актеры Волковского в кино</a>
+                                        <a class="nav__link" href="#">Фильмы с участием актеров театра</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="footer__addition">
+                        <div class="footer__legalities">
+                            <div class="footer__item">
+                                2023 © Все права защищены
+                            </div>
+                            <div class="footer__item">
+                                <a class="link link--inverted-text-alike" href="#">Политика конфиденциальности</a>
+                            </div>
+                            <div class="footer__item">
+                                <a class="link link--inverted-text-alike" href="#">Карта сайта</a>
+                            </div>
+                        </div>
+                        <div class="footer__developer">
+                            <a class="red-star" href="https://redstar.agency">
+                                разработано в&nbsp;<b class="red-star__logo">Редстар</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <div class="menu">
+            <div class="menu__wrap container">
+                <button class="menu__close">
+                    <svg class="menu__cross" width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 8.41L19.59 7L14 12.59L8.41 7L7 8.41L12.59 14L7 19.59L8.41 21L14 15.41L19.59 21L21 19.59L15.41 14L21 8.41Z"/>
+                    </svg>
+                </button>
+                <nav class="nav nav--header">
+                    <div class="nav__half">
+                        <div class="nav__section">
+                            <a class="nav__handler" href="#">
+                                Театр сегодня
+                            </a>
+                            <div class="nav__dropdown">
+                                <a class="nav__link" href="#">Новости</a>
+                                <a class="nav__link" href="#">Репертуар</a>
+                                <a class="nav__link" href="#">Труппа</a>
+                                <a class="nav__link" href="#">О театре</a>
+                                <a class="nav__link" href="#">Проекты и события</a>
+                                <a class="nav__link" href="#">Визит в театр</a>
+                                <a class="nav__link" href="#">Контакты</a>
+                            </div>
+                        </div>
+                        <div class="nav__section">
+                            <a class="nav__handler" href="#">
+                                История театра
+                            </a>
+                        </div>
+                        <div class="nav__section">
+                            <a class="nav__handler" href="#">
+                                Персоналии
+                            </a>
+                            <div class="nav__dropdown">
+                                <a class="nav__link" href="#">Сотрудники театра — участники&nbsp;ВОВ</a>
+                                <a class="nav__link" href="#">Художественное руководство</a>
+                                <a class="nav__link" href="#">Режиссеры</a>
+                                <a class="nav__link" href="#">Ведущие актеры театра</a>
+                                <a class="nav__link" href="#">Труппа</a>
+                                <a class="nav__link" href="#">Художники</a>
+                                <a class="nav__link" href="#">Дирекция</a>
+                                <a class="nav__link" href="#">С театром сотрудничали</a>
+                                <a class="nav__link" href="#">В создании спектаклей принимали участие</a>
+                            </div>
+                        </div>
+                        <div class="nav__section">
+                            <a class="nav__handler" href="#">
+                                Летопись театра
+                            </a>
+                        </div>
+                        <div class="nav__section">
+                            <a class="nav__handler" href="#">
+                                Спектакли
+                            </a>
+                            <div class="nav__dropdown">
+                                <a class="nav__link" href="#">Волковские сезоны</a>
+                                <a class="nav__link" href="#">Спектакли по алфавиту</a>
+                                <a class="nav__link" href="#">Спектакли по русской классической драматургии (по 1917)</a>
+                                <a class="nav__link" href="#">Спектакли по советской драматургии <span class="nobr">(1920-1950 г.)</span></a>
+                                <a class="nav__link" href="#">Спектакли по советской драматургии <span class="nobr">(1960-1980 г.)</span></a>
+                                <a class="nav__link" href="#">Спектакли по современной отечественной драматургии</a>
+                                <a class="nav__link" href="#">Спектакли по зарубежной драматургии</a>
+                                <a class="nav__link" href="#">Спектакли на камерной сцене</a>
+                                <a class="nav__link" href="#">Детские спектакли</a>
+                            </div>
+                        </div>
+                        <div class="nav__section">
+                            <a class="nav__handler" href="#">
+                                Гастроли
+                            </a>
+                            <div class="nav__dropdown">
+                                <a class="nav__link" href="#">Гастрольные поездки театра по России и СССР</a>
+                                <a class="nav__link" href="#">Зарубежные гастроли театра</a>
+                                <a class="nav__link" href="#">Участие в фестивалях</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav__half">
+                        <div class="nav__section">
+                            <a class="nav__handler" href="#">
+                                Наши гости
+                            </a>
+                            <div class="nav__dropdown">
+                                <a class="nav__link" href="#">Театры России и мира на Волковской сцене</a>
+                                <a class="nav__link" href="#">Мировые звезды на Волковской сцене</a>
+                                <a class="nav__link" href="#">Участники Волковских фестивалей</a>
+                                <a class="nav__link" href="#">Участники фестивалей БТР</a>
+                                <a class="nav__link" href="#">Режиссерские лаборатории</a>
+                                <a class="nav__link" href="#">Театр — центр общественной и культурной жизни</a>
+                            </div>
+                        </div>
+                        <div class="nav__section">
+                            <a class="nav__handler" href="#">
+                                Книги о театре
+                            </a>
+                            <div class="nav__dropdown">
+                                <a class="nav__link" href="#">Книги о Фёдоре Волкове</a>
+                                <a class="nav__link" href="#">Книги по истории театра</a>
+                                <a class="nav__link" href="#">Книги о режиссерах и актерах</a>
+                                <a class="nav__link" href="#">Журнал «Театральный круг» (2009-2015)</a>
+                            </div>
+                        </div>
+                        <div class="nav__section">
+                            <a class="nav__handler" href="#">
+                                СМИ о театре
+                            </a>
+                            <div class="nav__dropdown">
+                                <a class="nav__link" href="#">Публикации до 1918 года</a>
+                                <a class="nav__link" href="#">Публикации <span class="nobr">1918-1960 гг.</span></a>
+                                <a class="nav__link" href="#">Публикации <span class="nobr">1961-1991 гг.</span></a>
+                                <a class="nav__link" href="#">Публикации <span class="nobr">1992-2008 гг.</span></a>
+                                <a class="nav__link" href="#">Публикации и видео <span class="nobr">2009-2024гг.</span></a>
+                            </div>
+                        </div>
+                        <div class="nav__section">
+                            <a class="nav__handler" href="#">
+                                Фильмы о театре
+                            </a>
+                            <div class="nav__dropdown">
+                                <a class="nav__link" href="#">Фильмы и сюжеты о театре</a>
+                                <a class="nav__link" href="#">Фильмы и сюжеты о Сергее&nbsp;Пускепалисе</a>
+                            </div>
+                        </div>
+                        <div class="nav__section">
+                            <a class="nav__handler" href="#">
+                                Видеозаписи спектаклей
+                            </a>
+                        </div>
+                        <div class="nav__section">
+                            <a class="nav__handler" href="#">
+                                Актеры театра в кино
+                            </a>
+                            <div class="nav__dropdown">
+                                <a class="nav__link" href="#">Актеры Волковского в кино</a>
+                                <a class="nav__link" href="#">Фильмы с участием актеров театра</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+
+
+        <script src="../vendors/masonry/masonry.pkgd.min.js"></script>
+        <script src="../vendors/swiper/swiper-bundle.min.js"></script>
+        <script src="../scripts/scripts.js?1732022341"></script>
+
+    </body>
+</html>
+
+
