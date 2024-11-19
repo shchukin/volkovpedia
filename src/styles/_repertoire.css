@@ -35,6 +35,18 @@
     .repertoire__body {
         margin-top: 30px;
     }
+        .repertoire__list {
+
+        }
+            .repertoire__item {
+                margin-top: 30px;
+            }
+
+            .repertoire__item:first-child {
+                margin-top: 0;
+            }
+
+
         .repertoire__season {
             margin-top: 80px;
         }
@@ -100,6 +112,19 @@
         .repertoire__body {
             margin-top: 40px;
         }
+
+            .repertoire__list {
+
+            }
+                .repertoire__item {
+                    margin-top: 40px;
+                }
+
+                .repertoire__item:first-child {
+                    margin-top: 0;
+                }
+
+
             .repertoire__season {
                 margin-top: 100px;
             }
@@ -166,6 +191,18 @@
         .repertoire__body {
             margin-top: 24px;
         }
+            .repertoire__list {
+
+            }
+                .repertoire__item {
+                    margin-top: 24px;
+                }
+
+                .repertoire__item:first-child {
+                    margin-top: 0;
+                }
+
+
             .repertoire__season {
                 margin-top: 60px;
             }
