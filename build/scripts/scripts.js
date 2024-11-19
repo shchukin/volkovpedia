@@ -1,45 +1,19 @@
-(function ($) {
-
-    // /* Select placeholder */
-    // function selectPlaceholder($element) {
-    //     if ($element.val() === 'placeholder') {
-    //         $element.parent('.input').addClass('input--placeholder-is-chosen');
-    //     } else {
-    //         $element.parent('.input').removeClass('input--placeholder-is-chosen');
-    //     }
-    // }
-    //
-    // $('select.input__widget').each(function () {
-    //     selectPlaceholder($(this));
-    // }).on('change', function () {
-    //     selectPlaceholder($(this));
-    // });
-    //
-    // /* Expanding textarea */
-    // function expandTextarea($element) {
-    //     $element.css('height', 'auto');
-    //     $element.css('height', ($element[0].scrollHeight + 2 * parseInt($element.css('border-width'), 10)) + 'px');
-    // }
-    //
-    // $('.input--expandable .input__widget').each(function () {
-    //     expandTextarea($(this));
-    // }).on('input', function () {
-    //     expandTextarea($(this));
-    // });
-    //
-    // /* Error field */
-    // $('.input__widget').on('focus', function () {
-    //     $(this).parents('.input').removeClass('input--error');
-    //     $(this).parents('.input').nextUntil(':not(.helper--error)').remove();
-    // });
-    //
-    //
-    // /* Init mask */
-    // $('[type="tel"]').inputmask({
-    //     alias: 'phoneru',
-    // });
+document.addEventListener('DOMContentLoaded', () => {
 
     const $html = document.querySelector('html');
+
+
+    let isDesktop; /* т.е. не смартфон, а любой десктоп */
+
+    function initGlobalConstant() {
+        isDesktop = window.matchMedia("(min-width: 740px)").matches;
+    }
+
+    /* При открытии страницы */
+    initGlobalConstant();
+
+    /* При ресайзе страницы */
+    window.addEventListener('resize', initGlobalConstant);
 
 
 
@@ -193,4 +167,64 @@
     });
 
 
-})(jQuery);
+    /* Карусели */
+
+    document.querySelectorAll('.carousel').forEach(($carousel) => {
+
+        if( $carousel.classList.contains('carousel--js-init-day') ) {
+            new Swiper($carousel.querySelector('.swiper'), {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                autoHeight: true,
+                spaceBetween: 24,
+                navigation: {
+                    prevEl: $carousel.querySelector('.carousel__button--prev'),
+                    nextEl: $carousel.querySelector('.carousel__button--next'),
+                    disabledClass: 'carousel__button--disabled',
+                },
+                pagination: {
+                    el: $carousel.querySelector('.carousel__pagination'),
+                    type: "bullets", /* можно переделать на fraction, если будет много слайдов */
+                    bulletClass: 'carousel__bullet',
+                    bulletActiveClass: 'carousel__bullet--current',
+                    clickable: true
+                },
+                breakpoints: {
+                    740: {
+                        pagination: false
+                    }
+                },
+            });
+        }
+
+        if( $carousel.classList.contains('carousel--js-init-dates') ) {
+            if(!isDesktop) {
+                new Swiper($carousel.querySelector('.swiper'), {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+                    autoHeight: true,
+                    spaceBetween: 24,
+                    navigation: {
+                        prevEl: $carousel.querySelector('.carousel__button--prev'),
+                        nextEl: $carousel.querySelector('.carousel__button--next'),
+                        disabledClass: 'carousel__button--disabled',
+                    },
+                    pagination: {
+                        el: $carousel.querySelector('.carousel__pagination'),
+                        type: "fraction", /* можно переделать на fraction, если будет много слайдов */
+                        bulletClass: 'carousel__bullet',
+                        bulletActiveClass: 'carousel__bullet--current',
+                        clickable: true
+                    }
+                });
+            } else {
+                new Masonry(document.querySelector('.carousel--js-init-dates .swiper-wrapper'), {
+                    gutter: 16
+                });
+            }
+        }
+    });
+
+});
+
+
