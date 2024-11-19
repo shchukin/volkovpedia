@@ -165,6 +165,8 @@
                         /*background-color: #FFFFFF;*/
                     }
 
+
+                /* Правый паддинг: */
                 .abc__ribbon::after {
                     content: "";
                     width: calc(var(--container-padding) - 5px);
