@@ -301,3 +301,132 @@
 }
 
 
+
+.carousel--css-skin-dates {
+
+}
+
+@media (width < 740px) {
+
+    .carousel--css-skin-dates {
+        position: relative;
+    }
+        .carousel--css-skin-dates .carousel__widget {
+
+        }
+            .carousel--css-skin-dates .swiper {
+
+            }
+                .carousel--css-skin-dates .swiper-wrapper {
+
+                }
+
+
+        .carousel--css-skin-dates .carousel__controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            .carousel--css-skin-dates .carousel__button {
+                width: 40px;
+                height: 60px;
+                padding: 0;
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: transparent;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .carousel--css-skin-dates .carousel__button--disabled {
+                background-color: transparent;
+                opacity: 50%;
+                cursor: default;
+                transition: none;
+            }
+
+            .carousel--css-skin-dates .carousel__button--prev {
+                left: 14px;
+            }
+
+            .carousel--css-skin-dates .carousel__button--next {
+                right: 14px;
+            }
+                .carousel--css-skin-dates .carousel__chevron {
+                    vertical-align: top;
+                    width: 26px;
+                    height: auto;
+                    stroke: #303F64;
+                }
+
+                .carousel--css-skin-dates .carousel__button--prev .carousel__chevron {
+                    margin-right: 4px;
+                }
+
+                .carousel--css-skin-dates .carousel__button--next .carousel__chevron {
+                    margin-left: 4px;
+                }
+
+            .carousel--css-skin-dates .carousel__pagination {
+                width: auto;
+                font-size: 15px;
+                line-height: 20px;
+                white-space: nowrap;
+            }
+}
+
+@media (740px <= width) {
+
+    .carousel--css-skin-dates {
+
+    }
+        .carousel--css-skin-dates .carousel__widget {
+
+        }
+            .carousel--css-skin-dates .swiper {
+
+            }
+                .carousel--css-skin-dates .swiper-wrapper {
+
+                }
+                    .carousel--css-skin-dates .swiper-slide {
+                        width: 342px;
+                    }
+
+
+        .carousel--css-skin-dates .carousel__controls {
+
+        }
+            .carousel--css-skin-dates .carousel__button {
+
+            }
+
+            .carousel--css-skin-dates .carousel__button--disabled {
+
+            }
+
+            .carousel--css-skin-dates .carousel__button--prev {
+
+            }
+
+            .carousel--css-skin-dates .carousel__button--next {
+
+            }
+                .carousel--css-skin-dates .carousel__chevron {
+
+                }
+
+                .carousel--css-skin-dates .carousel__button--prev .carousel__chevron {
+
+                }
+
+                .carousel--css-skin-dates .carousel__button--next .carousel__chevron {
+
+                }
+
+            .carousel--css-skin-dates .carousel__pagination {
+
+            }
+}
