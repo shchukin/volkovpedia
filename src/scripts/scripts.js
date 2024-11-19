@@ -1,4 +1,4 @@
-(function ($) {
+document.addEventListener('DOMContentLoaded', () => {
 
     const $html = document.querySelector('html');
 
@@ -225,7 +225,6 @@
         }
     });
 
+});
 
 
-
-})(jQuery);
