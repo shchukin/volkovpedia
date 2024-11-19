@@ -1,22 +1,21 @@
 .about {
     display: grid;
-    grid-template-columns: 710px 430px;
+    grid-template-columns: 740px 384px;
     gap: 60px;
     align-items: flex-start;
 }
     .about__content {
-        margin-top: 10px;
+        margin-top: 2px;
     }
 
     .about__sidebar {
         padding: 24px;
-        background-color: #F8F0E5;
-        color-scheme: light;
+        border: 1px solid #303F64;
         border-radius: 8px;
         color: #000000;
     }
         .about__param {
-            margin-top: 32px;
+            margin-top: 24px;
         }
 
         .about__param:first-child {
@@ -52,55 +51,20 @@
                 }
 
 
-        .about__pushkin-card {
-            margin-top: 32px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-family: var(--font-heading);
-            font-style: italic;
-            font-size: 16px;
-            line-height: 22px;
-            color: #303F64;
-        }
-            .about__pushkin-card::before {
-                content: "";
-                flex-shrink: 0;
-                display: block;
-                width: 22px;
-                height: 22px;
-                background-image: url("../images/about-pushkin-card/about-pushkin-card@1x.png");
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center center;
-            }
 
-            @media (min-resolution: 1.5dppx) {
-                .about__pushkin-card::before {
-                    background-image: url("../images/about-pushkin-card/about-pushkin-card@2x.png");
-                }
-            }
-
-
-
-@media (1850px <= width) {
+@media (1700px <= width) {
 
     .about {
-        /*display: grid;*/
-        grid-template-columns: 1076px 571px;
-        gap: 113px;
-        /*align-items: flex-start;*/
+        grid-template-columns: 864px 464px;
+        gap: 112px;
     }
         .about__content {
-            margin-top: 13px;
+            margin-top: 1px;
         }
 
         .about__sidebar {
             padding: 40px;
-            /*background-color: #F8F0E5;*/
-            /*color-scheme: light;*/
             border-radius: 10px;
-            /*color: #000000;*/
         }
             .about__param {
                 margin-top: 48px;
@@ -137,35 +101,6 @@
                         /*color: #6073A2;*/
                         /*text-transform: lowercase;*/
                     }
-
-
-            .about__pushkin-card {
-                margin-top: 48px;
-                /*display: flex;*/
-                /*align-items: center;*/
-                gap: 16px;
-                /*font-family: var(--font-heading);*/
-                /*font-style: italic;*/
-                font-size: 20px;
-                line-height: 24px;
-                /*color: #303F64;*/
-            }
-                .about__pushkin-card::before {
-                    /*content: "";*/
-                    /*display: block;*/
-                    width: 28px;
-                    height: 28px;
-                    /*background-image: url("../images/about-pushkin-card/about-pushkin-card@1x.png");*/
-                    /*background-size: contain;*/
-                    /*background-repeat: no-repeat;*/
-                    /*background-position: center center;*/
-                }
-
-                @media (min-resolution: 1.5dppx) {
-                    .about__pushkin-card::before {
-                        /*background-image: url("../images/about-pushkin-card/about-pushkin-card@2x.png");*/
-                    }
-                }
 }
 
 
@@ -175,7 +110,7 @@
     .about {
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 24px;
     }
         .about__content {
             margin-top: 0;
@@ -183,9 +118,8 @@
 
         .about__sidebar {
             order: -1;
-            /*padding: 24px;*/
+            padding: 16px;
             /*background-color: #F8F0E5;*/
-            /*color-scheme: light;*/
             /*border-radius: 8px;*/
             /*color: #000000;*/
         }
@@ -224,35 +158,6 @@
                         /*color: #6073A2;*/
                         /*text-transform: lowercase;*/
                     }
-
-
-            .about__pushkin-card {
-                margin-top: 24px;
-                /*display: flex;*/
-                /*align-items: center;*/
-                /*gap: 10px;*/
-                /*font-family: var(--font-heading);*/
-                /*font-style: italic;*/
-                font-size: 18px;
-                line-height: 22px;
-                /*color: #303F64;*/
-            }
-                .about__pushkin-card::before {
-                    /*content: "";*/
-                    /*display: block;*/
-                    width: 28px;
-                    height: 28px;
-                    /*background-image: url("../images/about-pushkin-card/about-pushkin-card@1x.png");*/
-                    /*background-size: contain;*/
-                    /*background-repeat: no-repeat;*/
-                    /*background-position: center center;*/
-                }
-
-                @media (min-resolution: 1.5dppx) {
-                    .about__pushkin-card::before {
-                        /*background-image: url("../images/about-pushkin-card/about-pushkin-card@2x.png");*/
-                    }
-                }
 }
 
 

@@ -20,7 +20,7 @@
 
     .video-preview__description {
         margin-top: 7px;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 22px;
     }
 
@@ -46,7 +46,7 @@
 
         .video-preview__description {
             margin-top: 8px;
-            font-size: 22px;
-            line-height: 28px;
+            font-size: 20px;
+            line-height: 26px;
         }
 }
