@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    /* Глобальный константы */
+
     const $html = document.querySelector('html');
 
 
