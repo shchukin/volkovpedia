@@ -199,8 +199,12 @@
             margin-top: 50px;
         }
 
+        .repertoire__switch + .repertoire__filter {
+            margin-top: 10px;
+        }
+
         .repertoire__body {
-            margin-top: 8px;
+            margin-top: 14px;
         }
             .repertoire__list {
 

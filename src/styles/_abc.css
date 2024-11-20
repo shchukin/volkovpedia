@@ -11,6 +11,7 @@
         height: 1px;
         background-color: #6073A2;
     }
+
     .abc__scroll {
 
     }
@@ -119,6 +120,7 @@
     }
         .abc__scroll {
             overflow-x: auto;
+            overflow-y: hidden;
             margin-left: calc(-1 * var(--container-padding));
             margin-right: calc(-1 * var(--container-padding));
             padding-left: var(--container-padding);
