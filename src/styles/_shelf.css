@@ -1,4 +1,5 @@
 .shelf {
+    position: relative;
     margin-top: 60px;
 }
 
@@ -26,6 +27,12 @@
         .shelf__heading-link:hover {
             text-decoration-color: currentColor;
         }
+
+    .shelf__details {
+        position: absolute;
+        right: 0;
+        top: 9px;
+    }
 
     .shelf__list {
         margin-top: 24px;
@@ -99,6 +106,10 @@
                     /*text-decoration-color: currentColor;*/
                 }
 
+            .shelf__details {
+                top: 11px;
+            }
+
             .shelf__list {
                 margin-top: 28px;
                 /*display: flex;*/
@@ -156,6 +167,11 @@
             .shelf__heading-link:hover {
 
             }
+
+        .shelf__details {
+            margin-top: 10px;
+            position: static;
+        }
 
         .shelf__list {
             margin-left: calc(-1 * var(--container-padding));  /* (2) На некоторых андроидах может вызывать горизонтальный скролл в 2px, обрезаем его в (1) */
