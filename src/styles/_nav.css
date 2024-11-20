@@ -151,9 +151,9 @@
                     display: none;
                 }
 
-                .footer__section--expanded .nav__dropdown {
+                .nav__section--expanded .nav__dropdown {
                     display: block;
-                    animation: var(--slide-bottom);
+                    animation: var(--slide-bottom-faster);
                 }
                     .nav__link {
                         /*display: block;*/

@@ -59,6 +59,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* Расхлопывание подменюшек (актуально на смартфонах) */
 
+    const $navSection = document.querySelectorAll('.nav__section:has(.nav__dropdown)');
+    $navSection.forEach((item) => {
+        item.querySelector('.nav__handler').addEventListener('click', function(event) {
+            event.preventDefault();
+            item.classList.toggle('nav__section--expanded');
+        });
+    });
+
+
     function resize(clipped) {
         const viewport = clipped.querySelector('.clipped__viewport');
         if (!clipped.classList.contains('clipped--open')) {
