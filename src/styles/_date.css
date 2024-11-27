@@ -8,7 +8,6 @@
             vertical-align: top;
             width: 100%;
             height: auto;
-            max-height: 40vh;
             object-fit: cover;
             border-top-left-radius: 12px;
             border-top-right-radius: 12px;
@@ -79,3 +78,12 @@
             white-space: nowrap;
             overflow: hidden;
         }
+
+
+
+@media (width < 740) {
+    
+    .date__image {
+        max-height: 40vh;
+    }
+}
