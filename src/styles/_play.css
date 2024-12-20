@@ -43,7 +43,7 @@
 
         .play__body {
             padding-top: 24px;
-            padding-right: 288px;
+            padding-right: 40px;
         }
             .play__director {
                 font-size: 18px;
@@ -80,10 +80,10 @@
                 margin-top: 22px;
                 display: flex;
                 flex-wrap: wrap;
-                gap: 24px 14px;
+                gap: 24px 60px;
             }
                 .play__stat {
-                    width: 240px;
+
                 }
 
                 .play__stat--shows {
@@ -192,7 +192,7 @@
                     margin-top: 28px;
                     /*display: flex;*/
                     /*flex-wrap: wrap;*/
-                    gap: 28px 24px;
+                    gap: 24px 80px;
                 }
                     .play__stat {
                         /*width: 240px;*/
